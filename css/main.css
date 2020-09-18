@@ -1,29 +1,48 @@
 body {
-  font-size: 18px;
-  line-height: 1.5;
+  background-color: #F2F2F2;
 }
 
-header,
-nav,
-main,
-footer {
-  margin: 1.25rem auto;
-  max-width: 760px;
+#content {
+  background-color: #FFF9F9;
+  max-width: 50%;
+  margin: 100px auto;
+  border-radius: 10px;
 }
 
 header,
 footer {
-  background-color: navy;
-  color: #fff;
+  background-color: #040B4A;
+  border-radius: 10px;
   text-align: center;
+  padding: 10px;
+  color: white;
+
 }
 
-header {
-  padding: 1.5rem;
+h1 {
+  font-family: 'Zilla Slab', serif;
+  font-size: 2.5em;
 }
 
-p img {
+img {
   float: right;
-  margin: 10px;
-  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+hr {
+  width: 60%;
+  border: 2px solid red;
+  margin-left: 0;
+}
+
+.BYUI{
+  color: white;
+}
+
+.lastp {
+  color: yellow;
 }
