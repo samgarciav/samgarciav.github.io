@@ -41,8 +41,16 @@ hr {
   margin-left: 0;
 }
 
+a:hover{
+  color: red
+}
+
 .BYUI {
   color: white;
+}
+
+.BYUI:hover{
+  color: yellow;
 }
 
 .lastp {
