@@ -47,29 +47,14 @@ a:hover{
   color: red
 }
 
-.BYUI {
+.byui {
   color: white;
 }
 
-.BYUI:hover{
+.byui:hover{
   color: yellow;
 }
 
 .lastp {
   color: yellow;
-}
-
-@media screen and (max-width: 750px) {
-  #content {
-    max-width: 90%;
-    background-color: #FFF9F9;
-    margin: auto;
-  }
-
-  img{
-    float: none;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-  }
 }
