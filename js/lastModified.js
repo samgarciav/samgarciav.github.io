@@ -13,3 +13,6 @@ document.getElementById('lastModified').innerHTML = formated_day_time;
 */
 
 document.getElementById('lastModified').innerHTML = document.lastModified;
+
+let YYYY = new Date().getFullYear();
+document.getElementById('getFullYear').innerHTML = YYYY;

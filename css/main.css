@@ -28,7 +28,7 @@ h1 {
 
 img {
   float: right;
-  margin-right: 10px;
+  margin: 10px 10px;
   border-radius: 8px;
   box-shadow: -5px -5px 5px lightblue, 2px 2px 5px lightgrey;
 }
@@ -57,4 +57,20 @@ a:hover{
 
 .lastp {
   color: yellow;
+}
+
+
+@media only screen and (max-width: 850px) {
+  #content {
+    max-width: 90%;
+    background-color: #FFF9F9;
+    margin: auto;
+  }
+
+  img{
+    float: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
