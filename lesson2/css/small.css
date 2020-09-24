@@ -1,0 +1,47 @@
+body {
+  background-color: #F2F2F2;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.2rem;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background-color: #FFF9F9;
+}
+
+main {
+  border: 1px solid red;
+}
+
+section {
+  border: 1px dotted black;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 20px auto;
+
+}
+
+h2 {
+  background-color: fuchsia;
+  margin: 0px;
+  padding: 10px;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.dellimg,
+.meliimg,
+.ldsimg {
+  max-width: 90%;
+  box-shadow: 5px 5px 5px lightgrey;
+  text-align: center;
+  border: 2px solid;
+  display: block;
+  margin: auto;
+}
