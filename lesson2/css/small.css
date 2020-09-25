@@ -1,48 +1,81 @@
 body {
   background-color: #F2F2F2;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
 }
 
+header {
+  background-color: #662E9B;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-family: 'Courgette', cursive;
+}
+
+
 .content {
-  max-width: 500px;
+  max-width: 100%;
   margin: auto;
   background-color: #FFF9F9;
 }
 
+
 main {
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 section {
-  border: 1px dotted black;
+  border: 2px solid #EA3546;
   border-radius: 10px;
   max-width: 80%;
   margin: 20px auto;
   overflow: hidden;
-
 }
 
 h2 {
-  background-color: fuchsia;
+  background-color: #F9C80E;
   margin: 0px;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
-footer {
-  background-color: red;
+h3 {
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+a {
+  display: block;
   text-align: center;
-  padding: 10px;
-  color: white;
+
+}
+
+section p {
+  background-color: #DFF4F6;
+  padding: 1.25rem; 
+  margin: 20px 0px 0px 0px;
 }
 
 .dellimg,
 .meliimg,
 .ldsimg {
   max-width: 90%;
-  box-shadow: 5px 5px 5px lightgrey;
-  text-align: center;
-  border: 2px solid;
+  box-shadow: 7px 7px 5px lightgrey;
   display: block;
-  margin: auto;
+  margin: 30px auto;
+}
+
+footer {
+  background-color: #662E9B;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.byui {
+  color: white;
+}
+
+.byui:hover {
+  color: #F9C80E;
 }
