@@ -56,6 +56,8 @@ h3 {
 section a {
   display: block;
   text-align: center;
+  padding: 0 1rem;
+  word-wrap: break-word;
 
 }
 
@@ -71,7 +73,7 @@ section p {
   max-width: 90%;
   box-shadow: 7px 7px 5px lightgrey;
   display: block;
-  margin: 30px auto;
+  margin: 2.5rem auto;  
 }
 
 footer {

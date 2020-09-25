@@ -17,4 +17,8 @@
     grid-column-start: 3/3;
   }
 
+  .content{
+    max-width: 70%;
+  }
+
 }
