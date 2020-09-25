@@ -12,6 +12,15 @@ header {
   font-family: 'Courgette', cursive;
 }
 
+header a {
+  display: block;
+  text-align: right;
+  color: white;
+}
+
+header a:hover {
+  color: #F9C80E;
+}
 
 .content {
   max-width: 100%;
@@ -44,7 +53,7 @@ h3 {
   padding: 1rem 2rem;
 }
 
-a {
+section a {
   display: block;
   text-align: center;
 
@@ -52,7 +61,7 @@ a {
 
 section p {
   background-color: #DFF4F6;
-  padding: 1.25rem; 
+  padding: 1.25rem;
   margin: 20px 0px 0px 0px;
 }
 
@@ -76,6 +85,6 @@ footer {
   color: white;
 }
 
-.byui:hover {
+a:hover {
   color: #F9C80E;
 }
