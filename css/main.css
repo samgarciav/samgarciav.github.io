@@ -18,6 +18,7 @@ footer {
   text-align: center;
   padding: 10px;
   color: white;
+  font-size: .75rem;
 
 }
 
@@ -65,6 +66,10 @@ a:hover{
     max-width: 90%;
     background-color: #FFF9F9;
     margin: auto;
+  }
+
+  body{
+    font-size: 1rem;
   }
 
   img{
