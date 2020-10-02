@@ -11,31 +11,15 @@
     flex: 1 1 100%;
   }
 
-  .personas {
-    display: grid;
-    gap: 2rem;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-
+  th,
+  td {
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
   }
 
-  .persona1 {
-    grid-column: 1/1;
-    grid-row: 1/1;
-    align-self: center;
-    justify-self: center;
-
-  }
-
-  .persona2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    align-self: center;
-    justify-self: center;
-  }
-
-  img {
-    width: 50%;
+  .personas img {
+    width: 100%;
   }
 
 }
