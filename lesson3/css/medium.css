@@ -1,0 +1,41 @@
+@media only screen and (min-width: 32.5rem) {
+  .content {
+    max-width: 70%;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  .personas {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .persona1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    align-self: center;
+    justify-self: center;
+
+  }
+
+  .persona2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+  }
+
+  img {
+    width: 50%;
+  }
+
+}
