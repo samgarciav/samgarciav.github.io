@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32.5rem) {
+  .content {
+    max-width: 80%;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  th,
+  td {
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .personas img {
+    width: 100%;
+  }
+
+}
