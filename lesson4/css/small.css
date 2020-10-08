@@ -1,7 +1,7 @@
 body {
   background-color: aliceblue;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   margin: auto;
 }
 
@@ -38,19 +38,25 @@ h1 {
   font-family: 'Acme', sans-serif;
   margin: 0;
   padding: 0 20px;
-  font-size: 1.5em;
+  font-size: 1.05em;
 }
 
-h2 {
+.motto {
   font-family: 'Acme', sans-serif;
-  font-size: 1rem;
   font-style: italic;
   padding: 0 20px;
   margin: 0;
+  font-weight: 100;
+  font-size: .7em;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Acme', sans-serif;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 nav {
@@ -74,6 +80,7 @@ nav ul li a {
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
+  font-size: .8em;
 }
 
 main {
