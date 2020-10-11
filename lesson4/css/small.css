@@ -25,11 +25,11 @@ picture {
   flex: 0 0 30%;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-section{
+section {
   flex: 3 1 auto;
   margin: 10px 0;
 }
@@ -48,10 +48,9 @@ h1 {
   margin: 0;
   font-weight: 100;
   font-size: .7em;
-  text-align: center;
 }
 
-h2{
+h2 {
   font-family: 'Acme', sans-serif;
 }
 
@@ -59,29 +58,57 @@ h3 {
   font-size: 1.5em;
 }
 
-nav {
-  background-color: white;
-  text-align: center;
+button {
+  display: inline;  
+  font-size: 2rem;
 }
 
-nav a:hover {
-  background-color: #7DCE82;
+
+nav {
+  background-color: white;
+  font-size: .8em;
+  margin: .5rem 0px;
+
 }
 
 nav ul {
-  display: block;
+  margin: 0px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+}
+
+nav ul li {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  padding: .5rem 0rem .5rem 2.75rem;
+  display: none;
+}
+
+nav ul.responsive li {
+  display: block;
 }
 
 nav ul li a {
   display: block;
-  text-align: center;
-  padding: 0.75rem;
+  /*  this makes the hole block clickable */
   text-decoration: none;
-  font-size: .8em;
 }
+
+nav ul li.active {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+nav ul li:hover {
+  display: block;
+  background-color: #7DCE82;
+}
+
+/* The menu list and anchor */
+nav ul li:first-child{
+  display: block;
+  padding: .5rem 0rem .5rem 1.25rem;
+  border: none;
+}
+
 
 main {
   padding: 1rem;

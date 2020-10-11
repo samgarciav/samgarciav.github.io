@@ -1,16 +1,30 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 50rem) {
   body {
-    max-width: 70%;
-  font-size: 10px;
+    max-width: 80%;
+    margin: auto;
+    font-size: 1.25rem;
   }
 
-  header{
-    padding: 0 35px;
-  }
-
-  picture {
+  picture{
     flex: 0 0 10%;
-
   }
 
+    nav ul {
+    display: flex;
+    text-align: center;
+  }
+
+  nav ul li {
+    padding: 0px;
+    flex: 1 1 100%;
+    border: none;
+  }
+
+  nav ul li a {
+    padding: 20px;
+  }
+
+  nav ul li:first-child {
+    display: none;
+  }
 }
