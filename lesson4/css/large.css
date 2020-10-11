@@ -1,31 +1,11 @@
 @media only screen and (min-width: 50rem) {
   body {
     max-width: 80%;
-    margin: auto;
     font-size: 1.25rem;
   }
 
-  picture{
+  picture {
     flex: 0 0 10%;
   }
 
-    nav ul {
-    display: flex;
-    text-align: center;
-  }
-
-  nav ul li {
-    padding: 0px;
-    flex: 1 1 100%;
-    border: none;
-    display: block;
-  }
-
-  nav ul li a {
-    padding: 20px;
-  }
-
-  nav ul li:first-child {
-    display: none;
-  }
 }
