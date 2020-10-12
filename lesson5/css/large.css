@@ -8,4 +8,8 @@
     flex: 0 0 10%;
   }
 
+  .hero section {
+    font-size: 1em;
+  }
+
 }
