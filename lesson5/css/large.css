@@ -1,0 +1,11 @@
+@media only screen and (min-width: 50rem) {
+  body {
+    max-width: 80%;
+    font-size: 1.25rem;
+  }
+
+  picture {
+    flex: 0 0 10%;
+  }
+
+}

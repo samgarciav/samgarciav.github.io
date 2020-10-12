@@ -1,0 +1,145 @@
+body {
+  background-color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+main {
+  background-color: #7FDEFF;
+}
+
+header,
+footer {
+  background-color: #4062BB;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+picture {
+  flex: 0 0 30%;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  flex: 3 1 auto;
+  margin: 10px 0;
+}
+
+h1 {
+  font-family: 'Acme', sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.motto {
+  font-family: 'Acme', sans-serif;
+  font-style: italic;
+  padding: 0 20px;
+  margin: 0;
+  font-weight: 100;
+  font-size: .7em;
+}
+
+h2 {
+  font-family: 'Acme', sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+button {
+  display: inline;  
+  font-size: 2rem;
+}
+
+
+nav {
+  background-color: white;
+  font-size: .8em;
+  margin: .5rem 0px;
+
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav ul li {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  padding: .5rem 0rem .5rem 2.75rem;
+  display: none;
+}
+
+nav ul.responsive li {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  /*  this makes the hole block clickable */
+  text-decoration: none;
+}
+
+nav ul li.active {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+nav ul li:hover {
+  display: block;
+  background-color: #7DCE82;
+}
+
+/* The menu list and anchor */
+nav ul li:first-child{
+  display: block;
+  padding: .5rem 0rem .5rem 1.25rem;
+  border: none;
+}
+
+
+main {
+  padding: 1rem;
+}
+
+.prestontitle {
+  text-align: center;
+}
+
+main div {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 10px;
+  background-color: white;
+}
+
+
+footer {
+  text-align: center;
+  padding: .7rem;
+  font-size: .75rem;
+}
+
+.byui {
+  color: white;
+}
+
+.portalink {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: .75rem;
+}
