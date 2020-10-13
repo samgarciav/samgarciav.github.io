@@ -7,6 +7,7 @@ body {
 
 main {
   background-color: #7FDEFF;
+  border-radius: 5px;
 }
 
 header,
@@ -58,17 +59,11 @@ h3 {
   font-size: 1.5em;
 }
 
-button {
-  display: inline;  
-  font-size: 2rem;
-}
-
-
 nav {
   background-color: white;
   font-size: .8em;
   margin: .5rem 0px;
-
+  border-radius: 5px;
 }
 
 nav ul {
@@ -103,34 +98,28 @@ nav ul li:hover {
 }
 
 /* The menu list and anchor */
-nav ul li:first-child{
+nav ul li:first-child {
   display: block;
   padding: .5rem 0rem .5rem 1.25rem;
   border: none;
 }
 
 /* ******************************************************** */
-main {
-}
 
 .prestontitle {
   text-align: center;
-  padding: 1em;
+  margin: 0px;
+  padding: .7em;
+
 }
 
-main div {
-  border: 1px solid black;
-margin: 1em 0;
-  background-color: white;
-}
-.hero{
-  margin: 0px;
+.hero {
   position: relative;
 }
 
-.hero section{
+.hero section {
   position: absolute;
-  background-color:rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, .8);
   color: white;
   box-shadow: 0 0 30px white;
   border: 1px solid black;
@@ -141,24 +130,44 @@ margin: 1em 0;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, auto);
   align-items: center;
-  font-size: .5em;
+  font-size: .4em;
 }
 
-.hero section h3{
-border-bottom: 2px solid white;
-grid-column: 1/-1;
-font-size: 1.2em;
+
+.forecast {
+display: none;
 }
 
-.hero section h4{
+article{
+  margin: 3em .5em .5em .5em;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px black;
+  padding: .5em;
+  font-size: .7em; 
+}
+
+article picture {
+  max-width: 100%;
+  float: right;
+
+}
+
+
+.hero section h3 {
+  border-bottom: 2px solid white;
+  grid-column: 1/-1;
+  font-size: 1.2em;
+}
+
+.hero section h4 {
   margin: .3em;
   justify-self: end;
   font-size: 1.2em;
 }
 
-.hero p{
-    text-align: center;
-    margin: 0;
+.hero p {
+  text-align: center;
+  margin: 0;
 }
 
 

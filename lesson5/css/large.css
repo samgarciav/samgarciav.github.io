@@ -1,12 +1,28 @@
 @media only screen and (min-width: 50rem) {
   body {
-    max-width: 80%;
     font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.5em;
   }
 
   picture {
     flex: 0 0 10%;
   }
+article{
+  display: flow-root;
+}
+
+.forecast{
+  display: block;
+}
+
+article picture{
+  max-width: 40%;
+  
+}
+
 
   .hero section {
     font-size: 1em;
