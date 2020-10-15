@@ -10,19 +10,44 @@
   picture {
     flex: 0 0 10%;
   }
-article{
-  display: flow-root;
-}
 
+  article{
+  display: flow-root;
+  margin: 1.25em;
+  padding: 1.25em;
+}
+ 
 .forecast{
   display: block;
+  text-align:center   ;
 }
+
+table,
+th,
+td{
+  margin: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 2em;
+  text-align: center;
+  font-size: 1rem;
+}
+
 
 article picture{
-  max-width: 40%;
-  
+  max-width: 30%;
+  float: right;
+ margin: 0 0 0 1.5em;
+ justify-self: center; 
 }
 
+article p {
+  display: flow-root;
+}
 
   .hero section {
     font-size: 1em;
