@@ -3,15 +3,16 @@
     font-size: 1.25rem;
   }
 
-  .pancakes{
+  .pancakes {
     font-size: 1em;
   }
 
-  .pancakes button{
-    font-size:.7em;
+  .pancakes button {
+    font-size: .7em;
     top: 1em;
     right: 2.5em;
   }
+
   h1 {
     font-size: 1.5em;
   }
@@ -20,43 +21,50 @@
     flex: 0 0 10%;
   }
 
-  article{
-  display: flow-root;
-  margin: 1.25em;
-  padding: 1.25em;
-}
- 
-.forecast{
-  display: block;
-  text-align:center   ;
-}
+  article {
+    display: flow-root;
+    margin: 1.25em;
+    padding: 1.25em;
+  }
 
-table,
-th,
-td{
-  margin: auto;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
+  .hero section {
+    grid-template-columns: 1fr 1fr;
+    top: 10%;
+    left: 7%;
+   right: auto;
+    }
 
-th,
-td {
-  padding: 2em;
-  text-align: center;
-  font-size: 1rem;
-}
+  .forecast {
+    display: block;
+    text-align: center;
+  }
+
+  table,
+  th,
+  td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 2em;
+    text-align: center;
+    font-size: 1rem;
+  }
 
 
-article picture{
-  max-width: 30%;
-  float: right;
- margin: 0 0 0 1.5em;
- justify-self: center; 
-}
+  article picture {
+    max-width: 30%;
+    float: right;
+    margin: 0 0 0 1.5em;
+    justify-self: center;
+  }
 
-article p {
-  display: flow-root;
-}
+  article p {
+    display: flow-root;
+  }
 
   .hero section {
     font-size: 1em;
