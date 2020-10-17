@@ -236,6 +236,7 @@ iframe {
   display: block;
   margin: auto;
   height: 12em;
+  border:none; 
 }
 
 .contactinfo {
