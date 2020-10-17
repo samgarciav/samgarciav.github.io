@@ -219,10 +219,38 @@ article picture {
 }
 
 
+
+.contact{
+  background-color: #7FDEFF;
+  margin: 1.8em 0;
+  padding: .5em;
+  
+}
+
+
 iframe{
   box-shadow: 0 0 30px black;
   max-width: 100%;
+ 
 }
+.contactinfo{
+  margin-top: 2em;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  font-size: .7em;
+}
+.contact h4{
+  margin: 0 0 0.3em;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+.contact a{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+
 
 footer {
   text-align: center;

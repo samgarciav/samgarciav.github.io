@@ -54,7 +54,9 @@
     font-size: 1rem;
   }
 
-
+article{
+  margin-top: 2.8em;
+}
   article picture {
     max-width: 30%;
     float: right;
@@ -68,6 +70,36 @@
 
   .hero section {
     font-size: 1em;
+  }
+
+  .contact{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+  }
+  
+  .contact h3{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  
+  iframe{
+   
+    grid-row: 2/-1;
+    grid-column: 1/2;
+    justify-self: center;
+  }
+  .contactinfo{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    font-size: 1em;
+    padding-left: 2em;
+  }
+  .contact h4{
+    margin: 0 0 0.3em;
+    font-size: 1.3em;
+    font-weight: bolder;
   }
 
 }
