@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 64rem) {
   body {
     font-size: 1.25rem;
   }
@@ -27,13 +27,6 @@
     padding: 1.25em;
   }
 
-  .hero section {
-    grid-template-columns: 1fr 1fr;
-    top: 10%;
-    left: 7%;
-   right: auto;
-    }
-
   .forecast {
     display: block;
     text-align: center;
@@ -54,9 +47,10 @@
     font-size: 1rem;
   }
 
-article{
-  margin-top: 2.8em;
-}
+  article {
+    margin-top: 2.8em;
+  }
+
   article picture {
     max-width: 30%;
     float: right;
@@ -72,31 +66,41 @@ article{
     font-size: 1em;
   }
 
-  .contact{
+  .contact {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% 60% 20%;
     align-items: center;
   }
-  
-  .contact h3{
+
+  .contact h3 {
     grid-row: 1/2;
     grid-column: 1/-1;
   }
-  
-  iframe{
-   
+
+  iframe {
     grid-row: 2/-1;
     grid-column: 1/2;
     justify-self: center;
   }
-  .contactinfo{
+
+
+
+  .contactinfo {
     grid-column: 2/-1;
-    grid-row: 2/-1;
+    grid-row: 2/3;
     font-size: 1em;
     padding-left: 2em;
   }
-  .contact h4{
+
+  .contact ul{
+    grid-row: 3/-1;
+    grid-column: 2/-1;
+    justify-content: left;
+    padding-left: 3em;
+  }
+ 
+  .contact h4 {
     margin: 0 0 0.3em;
     font-size: 1.3em;
     font-weight: bolder;

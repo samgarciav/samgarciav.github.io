@@ -1,7 +1,7 @@
 pancakes();
 
 function pancakes(){
-  if(new Date().getDay() == 5){
+  if(new Date().getDay() == 6){
     document.getElementsByTagName("section")[0].style.display="block";
   }
   else{

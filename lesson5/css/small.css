@@ -220,10 +220,15 @@ article picture {
 
 .contact {
   background-color: #7FDEFF;
-  margin: 1.8em 0;
+  margin: 1.1em 0;
   padding: .5em;
 }
 
+.contact h4 {
+  margin: 0 0 0.3em;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
 
 iframe {
   box-shadow: 0 0 30px black;
@@ -234,16 +239,10 @@ iframe {
 }
 
 .contactinfo {
-  margin-top: 2em;
+  margin: 2em .5em 1em 1.5em;
   grid-column: 2/-1;
   grid-row: 2/-1;
   font-size: .7em;
-}
-
-.contact h4 {
-  margin: 0 0 0.3em;
-  font-size: 1.3em;
-  font-weight: bolder;
 }
 
 .contact a {
@@ -251,8 +250,22 @@ iframe {
   color: inherit;
 }
 
+.contact img {
+  width: 50px;
+}
 
+.contact ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+}
 
+.contact ul li {
+margin: 0.5em;  
+
+}
 
 footer {
   text-align: center;
