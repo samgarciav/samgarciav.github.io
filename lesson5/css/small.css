@@ -22,8 +22,8 @@ main {
 .pancakes button {
   font-size: .5em;
   position: absolute;
-  top: 75%;
-  right: 5%;
+  top: 10%;
+  right: 3%;
   background-color: rgba(0, 0, 0, .2);
 }
 
