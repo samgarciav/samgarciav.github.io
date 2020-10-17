@@ -177,10 +177,10 @@ nav ul li:first-child {
   text-align: center;
   margin-top: 1.5em;
   background-color: #7FDEFF;
-padding: 1em;
+  padding: 1em;
 }
 
-.forecast h3{
+.forecast h3 {
   margin: .5em;
 }
 
@@ -218,35 +218,37 @@ article picture {
 
 }
 
-
-
-.contact{
+.contact {
   background-color: #7FDEFF;
   margin: 1.8em 0;
   padding: .5em;
-  
 }
 
 
-iframe{
+iframe {
   box-shadow: 0 0 30px black;
-  max-width: 100%;
- 
+  max-width: fit-content;
+  display: block;
+  margin: auto;
+  height: 12em;
 }
-.contactinfo{
+
+.contactinfo {
   margin-top: 2em;
   grid-column: 2/-1;
   grid-row: 2/-1;
   font-size: .7em;
 }
-.contact h4{
+
+.contact h4 {
   margin: 0 0 0.3em;
   font-size: 1.3em;
   font-weight: bolder;
 }
-.contact a{
+
+.contact a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 
