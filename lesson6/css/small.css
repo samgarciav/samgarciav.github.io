@@ -147,10 +147,10 @@ nav ul li:first-child {
   border: 1px solid black;
   padding: .5em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 40% 15% 30% 15%;
   grid-template-rows: repeat(6, auto);
   align-items: center;
-  font-size: .4em;
+  font-size: .5em;
 }
 
 .hero section h3 {

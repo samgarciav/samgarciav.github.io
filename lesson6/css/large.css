@@ -103,7 +103,7 @@ main, footer {
   .contactinfo {
     grid-column: 2/-1;
     grid-row: 2/3;
-    font-size: 1em;
+    font-size: 1.2em;
     padding-left: 2em;
   }
 
