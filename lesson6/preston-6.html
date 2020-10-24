@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Keep The Weather</title>
+  <meta name="description" content="Sam Garcia W04 Assignment: Preston Page">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="pancakes">
+    <p>Saturday Preston Pancakes in the Park! <br> 9:00 a.m. at the city park pavilion.</p>
+    <button onclick="closepancakes()">X</button>
+  </div>
+
+  <header>
+    <picture>
+      <img class="logoimg" src="images/Keep_The_Weather_Logo.png" alt="Keep The Weather Logo">
+    </picture>
+    <section>
+      <h1>Keep The Weather</h1>
+      <p class="motto">Preserve it together</p>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="nav">
+      <li><a href="#" onclick="applyclass()"> &#9776; Menu</a> </li>
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="prestontitle">Preston Idaho</h2>
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 200px)" srcset="images/Small_200.webp">
+        <source media="(max-width: 500px)" srcset="images/Medium_500.webp">
+        <source media="(max-width: 900px)" srcset="images/Large_900.webp">
+        <source media="(max-width: 1900px)" srcset="images/ExtraLarge_1900.webp">
+        <img src="images/heroimg2.1.webp" alt="Hero  Image">
+      </picture>
+      <section>
+        <h3>Weather summary</h3>
+        <h4>Currently:</h4>
+        <p>Sunny</p>
+        <h4>High:</h4>
+        <p>76 F</p>
+        <h4>Wind Chil:</h4>
+        <p>F</p>
+        <h4>Humudity</h4>
+        <p>69%</p>
+        <h4>Wind Speed</h4>
+        <p>5 mph</p>
+      </section>
+    </div>
+
+    <div class="forecast">
+      <h3>5 day forecast</h3>
+      <table>
+        <tr>
+          <th class="day">Fri</th>
+          <th class="day">Sat</th>
+          <th class="day">Sun</th>
+          <th class="day">Mon</th>
+          <th class="day">Tue</th>
+        </tr>
+        <tr>
+          <td><img src="images/wind.png" alt="Forecast image">76 F</td>
+          <td><img src="images/rain.png" alt="Forecast image">80 F</td>
+          <td><img src="images/cloud.png" alt="Forecast image">60 F</td>
+          <td><img src="images/light.png" alt="Forecast image">50 F</td>
+          <td><img src="images/sun.png" alt="Forecast image">90 F</td>
+
+        </tr>
+      </table>
+    </div>
+
+    <article>
+      <picture class="articleimg"><img src="images/airquality.webp" alt="City air photo"></picture>
+      <h3>Article Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus, id magni at quibusdam doloribus eligendi
+        laborum, tempore mollitia esse ipsam voluptatibus fuga ex perferendis suscipit pariatur iure! Facere dolorem cum
+        minima vero explicabo saepe ex accusantium libero! Reiciendis sequi voluptas ea molestiae ducimus culpa vel
+        nostrum nulla quisquam sit, earum quibusdam asperiores provident aliquam temporibus eos. Quod mollitia aut
+        aliquid perferendis ipsum ratione nesciunt corporis esse hic enim eum magni libero, inventore quam dolor facere
+        laborum ab nam beatae repellendus fugiat minus dignissimos? Officia deleniti maiores tenetur, perferendis rem
+        non hic ea distinctio earum sed iste dolor aperiam maxime asperiores quibusdam dicta quisquam quod! Sunt ipsum
+        beatae unde, labore blanditiis natus eaque dicta fugit, ducimus obcaecati quas, libero ipsam. Modi eaque magnam
+        repellendus aperiam eum impedit quam sed unde ab, culpa necessitatibus accusantium! Earum veritatis sunt
+        quisquam mollitia error corporis numquam nisi minus laboriosam asperiores dolor modi facilis corrupti provident
+        temporibus quis aut soluta quidem non tempora deserunt, est, assumenda quod nesciunt? Incidunt eius temporibus
+        quia, voluptatem placeat dignissimos, nobis numquam officiis esse nemo porro aliquam earum repellendus dolorem
+        ipsum expedita aspernatur, dolor mollitia ab quasi. Non incidunt quibusdam aliquid molestiae fuga blanditiis
+        recusandae ipsam. Animi recusandae natus voluptatem?
+      </p>
+    </article>
+
+    <div class="contact">
+      <h3>Contact Info</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738729464!2d-111.91543022637138!3d42.09974160027356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2smx!4v1602861240657!5m2!1sen!2smx"
+        allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+      <div class="contactinfo">
+        <h4>Keep The Weather</h4>
+        <address><i class="fa fa-map-marker" aria-hidden="true"></i>
+          Preston <br>
+          Idaho 83263 <br>
+          USA
+        </address>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i><a href="tel:+522444464777"> 5555555555</a><br>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i><a
+          href="mailto:12345@example.com">info@keeptheweather.com</a><br>
+      </div>
+      <ul>
+        <li><a href="https://wa.me/522441105796" target="_blank"><img src="images/WhatsApp.png" alt="WhatsApp logo"></a>
+        </li>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="images/fblogo.png" alt="Facebook logo"></a>
+        </li>
+        <li> <a href="https://twitter.com/?lang=en" target="_blank"><img class="sociallogo" src="images/twitterlogo.png"
+              alt="Twitter logo"></a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p> &copy; <span id="getFullYear"></span> | Samuel García | México | <a class="byui"
+        href="https://www.byui.edu/online" target="_blank">
+        BYUI
+        Online Learning</a> </p>
+    <p id="today">ja</p>
+    <a class="portalink" href="../index.html">Course Portal</a>
+  </footer>
+
+  <script src="js/lastModified.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/forcast.js"></script>
+  <script src="js/pancakes.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.28/webfont.js"></script>
+  <script src="js/webfont.js"></script>
+
+
+
+</body>
+
+</html>
