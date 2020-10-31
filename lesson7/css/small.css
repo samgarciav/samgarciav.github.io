@@ -266,7 +266,10 @@ iframe {
 
 .contact ul li {
   margin: 0.5em;
+}
 
+.fa{
+  font-size: 20rem;
 }
 
 footer {
