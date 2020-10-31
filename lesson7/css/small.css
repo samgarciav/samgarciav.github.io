@@ -124,7 +124,6 @@ nav ul li:first-child {
 }
 
 /* ******************************************************** */
-
 .prestontitle {
   text-align: center;
   margin: 0px;
@@ -289,6 +288,9 @@ footer {
 }
 
 /************************* Gallery *************************/
+.gallerytitle {
+  padding: 0px 20px;
+}
 
 .gallery {
   display: grid;
@@ -313,6 +315,15 @@ footer {
 }
 
 .gallery figure:hover {
-    box-shadow: 0px 0px 10px 10px rgba(64, 98, 187, .3);
-  
+  box-shadow: 0px 0px 10px 10px rgba(64, 98, 187, .3);
+
+}
+
+.gallery img[data-src] {
+  filter: blur(0.2em);
+}
+
+.gallery img {
+  filter: blur(0em);
+  transition: filter 1s;
 }
