@@ -3,10 +3,12 @@
     font-size: 1.25rem;
   }
 
-main, footer {
-  max-width: 80%;
-  margin: auto;
-}
+  main,
+  footer {
+    max-width: 80%;
+    margin: auto;
+  }
+
   .pancakes {
     font-size: 1em;
   }
@@ -20,11 +22,11 @@ main, footer {
   h1 {
     font-size: 1.5em;
   }
-  
-  .prestontitle{
+
+  .prestontitle {
     font-size: 2.5em;
   }
-  
+
 
   picture {
     flex: 0 0 10%;
@@ -59,10 +61,10 @@ main, footer {
 
   article {
     margin-top: 2.8em;
-  
-      margin-left: 0;
-      margin-right: 0;
-    
+
+    margin-left: 0;
+    margin-right: 0;
+
   }
 
   article picture {
@@ -103,21 +105,30 @@ main, footer {
   .contactinfo {
     grid-column: 2/-1;
     grid-row: 2/3;
-  
+
     padding-left: 2em;
   }
 
-  .contact ul{
+  .contact ul {
     grid-row: 3/-1;
     grid-column: 2/-1;
     justify-content: left;
     padding-left: 3em;
   }
- 
+
   .contact h4 {
     margin: 0 0 0.3em;
     font-size: 1.3em;
     font-weight: bolder;
   }
+
+  /************************* Gallery *************************/
+
+  .gallery {
+  
+    grid-template-columns: repeat(3, minmax(300px, auto ));
+    
+  }
+
 
 }

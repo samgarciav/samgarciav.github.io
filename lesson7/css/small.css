@@ -294,8 +294,9 @@ footer {
   display: grid;
   gap: 1em;
   margin: 2em 0;
-  grid-template-columns: repeat(3, minmax(400px, auto));
+  grid-template-columns: 1fr;
   justify-items: center;
+  justify-content: center;
 }
 
 .gallery figure {
