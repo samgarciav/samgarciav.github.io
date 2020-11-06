@@ -45,16 +45,29 @@
 
   <main>
     <h2>Storm Center</h2>
-    
+
     <form action="thankspage.html" method="get">
       <fieldset>
         <legend>Rerporter Information</legend>
-        <label>*First Name: <input type="text" name="fname" min="5" pattern="[Az]{5}" required></label>
-        <label>*Last Name: <input type="text" name="lname" required></label>
-        <label>*Email: <input type="mail" name="email" placeholder="example@email.com" required></label>
-        <label>*Phone number: <input type="tel" name="phone" placeholder="1234567890" required></label>
-        <label>*Zip Code: <input type="number" name="zcode" required></label>
+        <label>*Full name: <input type="text" name="name" min="5" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" required autocomplete="name"></label>
+        <label>*Email: <input type="mail" name="email" placeholder="example@email.com" required autocomplete="email"></label>
+        <label>*Phone number: <input type="tel" name="phone" placeholder="1234567890" required autocomplete="tel"></label>
+        <label>*Zip Code: <input type="number" name="zip" required pattern="\d*" autocomplete="postal-code"></label>
       </fieldset>
+
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label>Storm date <input type="date" name="date"></label>
+        <label>Storm type <input type="number" name="number"></label>
+        <label>Storm severity <input type="range" name="severity" placeholder="example@email.com" required></label>
+        <label>Storm region<select type="" name="region" placeholder="1234567890" required></label>
+        <label>Are you in danger?
+          <input type="radio" name="zcode" required>
+          <input type="radio" name="zcode" required>
+          <input type="radio" name="zcode" required></label>
+        <label>Additional Information <textarea name="comments" id="" cols="30" rows="10"></textarea></label>
+      </fieldset>
+     <input type="submit" value="Report now">
 
     </form>
 
