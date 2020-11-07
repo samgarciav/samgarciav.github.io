@@ -268,7 +268,7 @@ iframe {
   margin: 0.5em;
 }
 
-.fa{
+.fa {
   font-size: 20rem;
 }
 
@@ -326,4 +326,70 @@ footer {
 .gallery img {
   filter: blur(0em);
   transition: filter 1s;
+}
+
+/* ------------- FORM ------------- */
+.reporttitle{
+  padding: 0px 20px;
+  font-size: 1.3em;
+}
+form {
+  max-width: 90%;
+  margin: auto;
+}
+
+form fieldset {
+  margin-bottom: 1em;
+  border: 1px solid #4062BB;
+  border-radius: .5em;
+}
+
+
+form fieldset legend {
+  margin: 0em 0em 0em 1em;
+  padding: 0em 0.3em;
+  font-weight: bolder;
+  font-size: .7em;
+}
+
+
+form fieldset label {
+  display: block;
+  padding-top: 1em;
+  font-size: .5em;
+
+}
+
+form fieldset input,
+fieldset select,
+fieldset textarea {
+  display: block;
+  font-size: 1.3em;
+  padding: .5em;
+  margin: .5em auto;
+  width: 15em;
+}
+
+form .radios label,
+.radios input {
+  width: auto;
+}
+
+form .radios{
+  margin: .5em auto;
+    display: flex;
+  justify-content: space-evenly;
+}
+
+form .radios input{
+  display: block;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: .5em;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(64, 98, 187, 1) 50%, rgba(0, 212, 255, 1) 100%);
+  color: white;
 }
