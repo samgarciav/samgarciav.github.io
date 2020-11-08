@@ -344,14 +344,12 @@ form fieldset {
   border-radius: .5em;
 }
 
-
 form fieldset legend {
   margin: 0em 0em 0em 1em;
   padding: 0em 0.3em;
   font-weight: bolder;
   font-size: .7em;
 }
-
 
 form fieldset label {
   display: block;
@@ -377,19 +375,20 @@ form .radios label,
 
 form .radios{
   margin: .5em auto;
-    display: flex;
+  display: flex;
   justify-content: space-evenly;
 }
 
-form .radios input{
+/* form .radios input{
   display: block;
-}
+} */
 
 form input[type="submit"] {
   width: 100%;
   margin-bottom: 1em;
   border-radius: .5em;
-  background: rgb(2, 0, 36);
+  padding: .5em;
+
   background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(64, 98, 187, 1) 50%, rgba(0, 212, 255, 1) 100%);
   color: white;
 }

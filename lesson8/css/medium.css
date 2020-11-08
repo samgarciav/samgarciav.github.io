@@ -4,18 +4,20 @@
     font-size: 1.2rem;
   }
 
-  .pancakes{
-    font-size: .8em ;
+  .pancakes {
+    font-size: .8em;
   }
 
   picture {
     flex: 0 0 20%;
   }
-nav{
-  max-width: 80%;
-  margin: 1em auto 1em auto;
-  
-}
+
+  nav {
+    max-width: 80%;
+    margin: 1em auto 1em auto;
+
+  }
+
   nav ul {
     display: flex;
     text-align: center;
@@ -36,29 +38,67 @@ nav{
     display: none;
   }
 
- 
+
 
   .hero section {
-   font-size: .55em;
+    font-size: .55em;
     grid-template-columns: 1fr 1fr;
     top: 10%;
     left: 7%;
     right: auto;
   }
-iframe{
-  height: 15em;
-  width: 15em;
-}
- 
 
-.contactinfo {
-  font-size: 1.2em;
+  iframe {
+    height: 15em;
+    width: 15em;
+  }
+
+
+  .contactinfo {
+    font-size: 1.2em;
+  }
+
+  /************************* Gallery *************************/
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  /************************* FORM *************************/
+  form {
+    max-width: 80%;
+    font-size: 1.3em;
+  }
+
+  form input[type="submit"] {
+    display: block;
+    margin: .5em auto;
+    width: 15em;
+  }
+
+  form fieldset label {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% auto;
+    margin-bottom: 2em;
+    align-items: center;
+  }
+
+  /* form fieldset input,
+  fieldset select,
+  fieldset textarea {
+    margin: 0;
+  } */
+
+  form .radios label,
+.radios input {
+  width: 100%;
+  margin: 0;
 }
 
-/************************* Gallery *************************/
-
-.gallery {
- grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+form .radios{
+  margin: -2em 0 2em 35%; 
 }
+
 
 }
