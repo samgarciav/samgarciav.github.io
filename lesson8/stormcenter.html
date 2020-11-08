@@ -50,7 +50,7 @@
       <fieldset>
         <legend>Rerporter Information</legend>
         <label>Full name:* <input type="text" name="name" minlength="5" pattern="[a-zA-Z]{5,}" required></label>
-        <label>Email:* <input type="email" name="email" placeholder="example@email.com" required></label>
+        <label>Email: <input type="email" name="email" placeholder="example@email.com"></label>
         <label>Phone number:* <input type="tel" name="phone" placeholder="0123456789" required></label>
         <label>Zip Code:* <input type="number" name="zip" required></label>
       </fieldset>
@@ -67,8 +67,8 @@
             <option value="Tornado">
           </datalist>
         </label>
-        <label>Storm severity <input type="range" name="severity" min="1" max="10"></label>
-        <label>Storm region<select name="region" required>
+        <label>Storm severity:  <span id="severity">1</span><input type="range" name="severity" min="0" max="10" step="1" value="1" oninput="queonda(this.value)" onchange="queonda(this.value)"></label>
+        <label>Storm region<select name="region">
             <option value="" selected disabled>- Select region -</option>
             <option value="Preston">Preston</option>
             <option value="Soda Springs">Soda Springs</option>
@@ -111,6 +111,7 @@
   <script src="js/webfont.js"></script>
 
   <script src="js/lazyload.js"></script>
+  <script src="js/severity.js"></script>
 
 </body>
 

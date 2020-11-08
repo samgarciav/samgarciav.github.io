@@ -356,7 +356,6 @@ form fieldset label {
   display: block;
   padding-top: 1em;
   font-size: .5em;
-
 }
 
 form fieldset input,
@@ -369,6 +368,15 @@ fieldset textarea {
   width: 15em;
   border: 1px solid black;
   border-radius: .2em;
+}
+form fieldset input[type="range"]{
+padding: 0;
+}
+
+#severity{
+  font-size: 1.3em;
+  margin-left: .5em;
+  font-weight: bolder;
 }
 
 .radios input {
