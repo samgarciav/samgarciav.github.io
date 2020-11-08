@@ -406,5 +406,10 @@ form input:required {
 
 form input:required:valid {
   border: 1px solid black;
+}
+
+.thankyou {
+  font-size: 2em;
+text-align: center;
 
 }
