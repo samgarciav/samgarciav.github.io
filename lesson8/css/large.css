@@ -131,7 +131,11 @@
   }
   .gallery figure:hover {
     box-shadow: 0px 0px 10px 10px rgba(64, 98, 187, .3);
-  
-  }
+    }
 
+    /* ------------- FORM ------------- */
+    form{
+      max-width: 60%;
+      font-size: 2em;
+    }
 }

@@ -65,40 +65,18 @@
   }
 
   /************************* FORM *************************/
-  form {
-    max-width: 80%;
-    font-size: 1.3em;
-  }
-
+ form{
+   max-width: 70%;
+   font-size: 1.7em;
+ }
+ 
   form input[type="submit"] {
     display: block;
     margin: .5em auto;
-    width: 15em;
+    width: 13em;
   }
+  
 
-  form fieldset label {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 25% auto;
-    margin-bottom: 2em;
-    align-items: center;
-  }
-
-  /* form fieldset input,
-  fieldset select,
-  fieldset textarea {
-    margin: 0;
-  } */
-
-  form .radios label,
-.radios input {
-  width: 100%;
-  margin: 0;
-}
-
-form .radios{
-  margin: -2em 0 2em 35%; 
-}
 
 
 }

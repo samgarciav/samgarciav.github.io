@@ -329,10 +329,11 @@ footer {
 }
 
 /* ------------- FORM ------------- */
-.reporttitle{
+.reporttitle {
   padding: 0px 20px;
   font-size: 1.3em;
 }
+
 form {
   max-width: 90%;
   margin: auto;
@@ -364,31 +365,38 @@ fieldset textarea {
   display: block;
   font-size: 1.3em;
   padding: .5em;
-  margin: .5em auto;
+  margin: .5em 0px 1em 1em;
   width: 15em;
+  border: 1px solid black;
+  border-radius: .2em;
 }
 
-form .radios label,
 .radios input {
+  display: inline;
   width: auto;
+  margin: 0em 0em 0em 1em;
 }
 
-form .radios{
-  margin: .5em auto;
-  display: flex;
-  justify-content: space-evenly;
-}
+.radios {
+  margin-bottom: 1em;
+  font-size: 1em;
 
-/* form .radios input{
-  display: block;
-} */
+}
 
 form input[type="submit"] {
   width: 100%;
   margin-bottom: 1em;
   border-radius: .5em;
   padding: .5em;
-
   background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(64, 98, 187, 1) 50%, rgba(0, 212, 255, 1) 100%);
   color: white;
+}
+
+form input:required {
+  border-left: 5px solid red;
+}
+
+form input:required:valid {
+  border: 1px solid black;
+
 }
