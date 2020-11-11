@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(50, 52, 150);
+}
+
+main {
+  background-color: azure;
+  max-width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+
+section {
+display: inline-block;
+  background-color: bisque;
+  text-align: center;
+  border: 1px solid black;
+  margin: 15px;
+  padding:15px;
+
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+/* ----------------------------- Medium ----------------------------- */
+@media only screen and (min-width: 40rem) {
+  main {
+    max-width: 70 %;
+  }
+}
+
+/* ----------------------------- Large ----------------------------- */
+@media only screen and (min-width: 60rem) {
+  main {
+    max-width: 90%;
+  }
+
+  .cards {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
