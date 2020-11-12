@@ -57,6 +57,12 @@ footer{
   color: white;
 }
 
+a{
+  display: block;
+  color: white;
+  text-align: center;
+}
+
 /* ----------------------------- Medium ----------------------------- */
 @media only screen and (min-width: 40rem) {
   main {
