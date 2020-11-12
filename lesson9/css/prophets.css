@@ -1,6 +1,7 @@
 body {
   background-color: rgb(50, 52, 150);
   font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
 }
 
 main {
@@ -62,12 +63,14 @@ footer {
   text-align: center;
   margin: 2em;
   color: white;
+  font-size: .8em;
 }
 
 a {
   display: block;
   color: white;
   text-align: center;
+  margin: .5em;
 }
 
 /* ----------------------------- Medium ----------------------------- */
