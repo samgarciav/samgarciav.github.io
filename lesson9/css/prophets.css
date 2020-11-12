@@ -22,9 +22,12 @@ h1 {
   font-weight: bolder;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr
+}
 
 section {
-display: inline-block;
   background-color: bisque;
   text-align: center;
   border: 1px solid black;
@@ -64,21 +67,24 @@ a{
 }
 
 /* ----------------------------- Medium ----------------------------- */
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 43rem) {
   main {
-    max-width: 70%;
+    max-width: 80%;
+    
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
 /* ----------------------------- Large ----------------------------- */
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 62rem) {
   main {
     max-width: 90%;
   }
 
   .cards {
     max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }
