@@ -48,15 +48,12 @@ img {
   margin-top: 1.5em;
   border-radius: .5em;
   box-shadow: .5em .5em .5em 0em rgba(0, 0, 0, .5);
+  filter: blur(0em);
+  transition: filter 1s;
 }
 
 img[data-src] {
   filter: blur(0.2em);
-}
-
-img {
-  filter: blur(0em);
-  transition: filter 1s;
 }
 
 footer {
