@@ -24,8 +24,8 @@ fetch(requestURL)
       card.appendChild(p2);
 
       let img = document.createElement('img');
-      /* img.setAttribute('src', "images/lazyload/placeholder.png"); */ // I tried the lazyload but the lighthouse score diminished. 
-      img.setAttribute('src', prophets[i].imageurl);
+      img.setAttribute('src', "images/lazyload/placeholder.png"); 
+      img.setAttribute('data-src', prophets[i].imageurl);
       img.setAttribute('alt', fullname + ' - ' + [i]);
       card.appendChild(img);
 
