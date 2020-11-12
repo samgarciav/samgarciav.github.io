@@ -51,6 +51,12 @@ img {
   transition: filter 1s;
 }
 
+footer{
+  text-align: center;
+  margin: 2em;
+  color: white;
+}
+
 /* ----------------------------- Medium ----------------------------- */
 @media only screen and (min-width: 40rem) {
   main {
