@@ -65,17 +65,32 @@
   }
 
   /************************* FORM *************************/
- form{
-   max-width: 70%;
-   font-size: 1.7em;
- }
- 
+  form {
+    max-width: 70%;
+    font-size: 1.7em;
+  }
+
   form input[type="submit"] {
     display: block;
     margin: .5em auto;
     width: 13em;
   }
+
+  /************************* Home *************************/
+  .towns {
+    grid-template-columns: repeat(2, minmax(15em, auto));
   
+  }
+
+  .towns section:nth-child(3){
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
 
 
 

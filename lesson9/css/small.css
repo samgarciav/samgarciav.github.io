@@ -369,11 +369,12 @@ fieldset textarea {
   border: 1px solid black;
   border-radius: .2em;
 }
-form fieldset input[type="range"]{
-padding: 0;
+
+form fieldset input[type="range"] {
+  padding: 0;
 }
 
-#severity{
+#severity {
   font-size: 1.3em;
   margin-left: .5em;
   font-weight: bolder;
@@ -410,6 +411,45 @@ form input:required:valid {
 
 .thankyou {
   font-size: 2em;
-text-align: center;
+  text-align: center;
 
 }
+
+/* ------------- HOME ------------- */
+.towns {
+  display: grid;
+  gap: 1em;
+}
+
+.towns section {
+  border: .3em solid #4062BB;
+  text-align: center;
+  /*   background-color: #4062BB;
+ */
+}
+
+.towns section h2 {
+  margin-bottom: .2em;
+}
+
+.towns section div {
+  margin: 0;
+  font-size: .7em;
+}
+
+.towns section div p .bold {
+  font-weight: 700;
+}
+
+.towns section img{
+  display: block;
+  max-width: 80%;
+  margin: .5em auto;
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+.towns section img[data-src] {
+  filter: blur(0.2em);
+}
+

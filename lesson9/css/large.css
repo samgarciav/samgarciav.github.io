@@ -125,17 +125,48 @@
   /************************* Gallery *************************/
 
   .gallery {
-  
-    grid-template-columns: repeat(3, minmax(300px, auto ));
-    
+
+    grid-template-columns: repeat(3, minmax(300px, auto));
+
   }
+
   .gallery figure:hover {
     box-shadow: 0px 0px 10px 10px rgba(64, 98, 187, .3);
-    }
+  }
 
-    /* ------------- FORM ------------- */
-    form{
-      max-width: 60%;
-      font-size: 2em;
-    }
+  /* ------------- FORM ------------- */
+  form {
+    max-width: 60%;
+    font-size: 2em;
+  }
+
+
+  /************************* Home *************************/
+  .towns{
+    font-size: 1.5em;
+    grid-template-columns: 1fr;
+
+  }
+  .towns section{
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .town section img{
+    flex: 0 1;
+  }
+
+  .towns section:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+
+  .towns section img{
+    display: inline;
+    max-width: 100%;
+    margin:0;
+  }
+  
 }
