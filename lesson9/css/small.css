@@ -453,3 +453,10 @@ form input:required:valid {
   filter: blur(0.2em);
 }
 
+/* ------------- WIREFRAME ------------- */
+.wireframes img{
+  display: block;
+  margin: 1em auto;
+}
+
+
