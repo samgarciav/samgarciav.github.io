@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keep The Weather</title>
   <meta name="description" content="Sam Garcia W07 Assignment: Preston Page">
-  
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
   <link rel="shortcut icon" href="images/favicon.ico">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet"> -->
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -58,15 +58,15 @@
       <section>
         <h3>Weather summary</h3>
         <h4>Currently:</h4>
-        <p>Sunny</p>
+        <p><span id="currently">Sunny jajaj</span></p>
         <h4>High:</h4>
-        <p><span id="tempF">50</span> F</p>
+        <p><span id="tempF">50jaja</span> &deg;F</p>
         <h4>Wind Chil:</h4>
         <p><span id="windchill"></span></p>
         <h4>Humudity</h4>
-        <p>69%</p>
+        <p><span id="humudity"></span>%</p>
         <h4>Wind Speed</h4>
-        <p> <span id="speed">5</span> mph</p>
+        <p> <span id="speed">jaja</span> mph</p>
       </section>
     </div>
 
@@ -81,11 +81,12 @@
           <th class="day">Tue</th>
         </tr>
         <tr>
-          <td><img src="images/5dayforcast/wind.png" alt="Icon represnting a windy day">76 F</td>
-          <td><img src="images/5dayforcast/rain.png" alt="Icon represnting a rainy day">80 F</td>
-          <td><img src="images/5dayforcast/cloud.png" alt="Icon represnting a cloudy day">60 F</td>
-          <td><img src="images/5dayforcast/light.png" alt="Icon represnting a stormy day">50 F</td>
-          <td><img src="images/5dayforcast/sun.png" alt="Icon represnting a sunny day">90 F</td>
+          <td><img src="http://openweathermap.org/img/wn/01n@2x.png" alt="Icon represnting a windy day"><span class="forecastday">76</span>&deg;F</td>
+          <td><img src="images/5dayforcast/rain.png" alt="Icon represnting a rainy day"><span class="forecastday">80</span>&deg;F</td>
+          <td><img src="images/5dayforcast/cloud.png" alt="Icon represnting a cloudy day"><span class="forecastday">60</span>&deg;F</td>
+          <td><img src="images/5dayforcast/light.png" alt="Icon represnting a stormy day"><span class="forecastday">50</span>&deg;F</td>
+          <td><img src="images/5dayforcast/sun.png" alt="Icon represnting a sunny day"><span class="forecastday">90</span>&deg;F</td>
+
 
         </tr>
       </table>
@@ -129,12 +130,14 @@
           href="mailto:12345@example.com">info@keeptheweather.com</a><br>
       </div>
       <ul>
-        <li><a href="https://wa.me/522441105796" target="_blank"><img src="images/social/WhatsApp.jpg" alt="WhatsApp logo"></a>
+        <li><a href="https://wa.me/522441105796" target="_blank"><img src="images/social/WhatsApp.jpg"
+              alt="WhatsApp logo"></a>
         </li>
-        <li><a href="https://www.facebook.com" target="_blank"><img src="images/social/fblogo.jpg" alt="Facebook logo"></a>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="images/social/fblogo.jpg"
+              alt="Facebook logo"></a>
         </li>
-        <li> <a href="https://twitter.com/?lang=en" target="_blank"><img class="sociallogo" src="images/social/twitterlogo.jpg"
-              alt="Twitter logo"></a>
+        <li> <a href="https://twitter.com/?lang=en" target="_blank"><img class="sociallogo"
+              src="images/social/twitterlogo.jpg" alt="Twitter logo"></a>
         </li>
       </ul>
     </div>

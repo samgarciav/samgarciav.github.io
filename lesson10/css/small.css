@@ -128,8 +128,7 @@ nav ul li:first-child {
   text-align: center;
   margin: 0px;
   padding: .7em;
-
-}
+ }
 
 .hero {
   position: relative;
@@ -194,6 +193,8 @@ td {
   border-collapse: collapse;
   font-size: .72em;
 }
+
+
 
 table th {
   background-color: rgba(248, 182, 45, 1);
@@ -458,5 +459,6 @@ form input:required:valid {
   display: block;
   margin: 1em auto;
 }
+
 
 
