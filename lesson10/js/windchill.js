@@ -27,9 +27,10 @@ fetch(forecast)
   })
   .then(function (jsonObject) {
     const days = jsonObject['list'];
-    
+    console.log(days);
+
     var newdays = [];
-    var today = parseInt(new Date().getDate());
+    var today = parseInt(new Date().getDate()+1);
     var h = 0;
     for (let i = 0; i < days.length; i++) {
       if (days[i].dt_txt == `2020-11-${today} 18:00:00`) {
@@ -38,21 +39,22 @@ fetch(forecast)
         today++;
       }
     }
-    console.log(newdays);
+
     let forecastday = document.getElementsByClassName('forecastday');
-       for(let i =0; i<forecastday.length; i++){
-      forecastday[i].innerHTML=newdays[i].main.temp;
+    for (let i = 0; i < forecastday.length; i++) {
+      forecastday[i].innerHTML = newdays[i].main.temp;
     }
 
     let weathericon = document.querySelectorAll("table td img");
-    for(let i =0; i<weathericon.length; i++){
-      weathericon[i].setAttribute("src",`http://openweathermap.org/img/wn/${newdays[i].weather[0].icon}@2x.png`)
+    for (let i = 0; i < weathericon.length; i++) {
+      weathericon[i].setAttribute("src", `http://openweathermap.org/img/wn/${newdays[i].weather[0].icon}@2x.png`)
     }
-    
+
     let weatherday = document.getElementsByClassName('day');
-    for(let i =0; i<weatherday.length; i++){
-      let longdate= new Date(newdays[i].dt_txt);
-    weatherday[i].textContent = longdate.toLocaleString("en-us", {weekday:"short"});
+    for (let i = 0; i < weatherday.length; i++) {
+      let longdate = new Date(newdays[i].dt_txt);
+      weatherday[i].textContent = longdate.toLocaleString("en-us", { weekday: "short" });
     }
+
   });
 
