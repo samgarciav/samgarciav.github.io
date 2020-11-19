@@ -30,7 +30,7 @@ fetch(forecast)
     console.log(days);
 
     var newdays = [];
-    var today = parseInt(new Date().getDate()+1);
+    var today = parseInt(new Date(days[0].dt_txt).getDate());
     var h = 0;
     for (let i = 0; i < days.length; i++) {
       if (days[i].dt_txt == `2020-11-${today} 18:00:00`) {
@@ -47,7 +47,7 @@ fetch(forecast)
 
     let weathericon = document.querySelectorAll("table td img");
     for (let i = 0; i < weathericon.length; i++) {
-      weathericon[i].setAttribute("src", `http://openweathermap.org/img/wn/${newdays[i].weather[0].icon}@2x.png`)
+      weathericon[i].setAttribute("src", `https://openweathermap.org/img/wn/${newdays[i].weather[0].icon}@2x.png`)
       weathericon[i].setAttribute("alt", `Icon representing ${newdays[i].weather[0].description}`);
     }
 
