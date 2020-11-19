@@ -48,6 +48,7 @@ fetch(forecast)
     let weathericon = document.querySelectorAll("table td img");
     for (let i = 0; i < weathericon.length; i++) {
       weathericon[i].setAttribute("src", `http://openweathermap.org/img/wn/${newdays[i].weather[0].icon}@2x.png`)
+      weathericon[i].setAttribute("alt", `Icon representing ${newdays[i].weather[0].description}`);
     }
 
     let weatherday = document.getElementsByClassName('day');
