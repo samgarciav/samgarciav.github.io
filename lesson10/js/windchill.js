@@ -30,15 +30,21 @@ fetch(forecast)
     console.log(days);
 
     var newdays = [];
-    var today = parseInt(new Date(days[0].dt_txt).getDate());
+    var today = new Date().getDate();
+    console.log(today);
     var h = 0;
-    for (let i = 0; i < days.length; i++) {
-      if (days[i].dt_txt == `2020-11-${today} 18:00:00`) {
-        newdays[h] = days[i];
-        h++;
-        today++;
+    let x = today;
+    for (let i = today; today < x + 6; i++) {
+      for (let i = 0; i < days.length; i++) {
+        if (days[i].dt_txt == `2020-11-${today} 18:00:00`) {
+          newdays[h] = days[i];
+          h++;
+        }
       }
+      today++;
     }
+
+
 
     let forecastday = document.getElementsByClassName('forecastday');
     for (let i = 0; i < forecastday.length; i++) {
