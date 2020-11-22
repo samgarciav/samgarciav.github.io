@@ -12,6 +12,13 @@
     flex: 0 0 20%;
   }
 
+  article picture {
+    max-width: 50%;
+    float: right;
+    margin: 0 0 0 1.5em;
+    justify-self: center;
+  }
+
   nav {
     max-width: 80%;
     margin: 1em auto 1em auto;
@@ -53,6 +60,11 @@
     width: 15em;
   }
 
+  table,
+th,
+td{
+  font-size: 1em;
+}
 
   .contactinfo {
     font-size: 1.2em;

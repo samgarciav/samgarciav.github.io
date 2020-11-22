@@ -67,13 +67,6 @@
 
   }
 
-  article picture {
-    max-width: 30%;
-    float: right;
-    margin: 0 0 0 1.5em;
-    justify-self: center;
-  }
-
   article p {
     display: flow-root;
   }
@@ -142,12 +135,13 @@
 
 
   /************************* Home *************************/
-  .towns{
+  .towns {
     font-size: 1.5em;
     grid-template-columns: 1fr;
 
   }
-  .towns section{
+
+  .towns section {
     padding: 1em;
     display: flex;
     justify-content: space-around;
@@ -155,7 +149,7 @@
     align-content: center;
   }
 
-  .town section img{
+  .town section img {
     flex: 0 1;
   }
 
@@ -163,10 +157,10 @@
     flex-direction: row-reverse;
   }
 
-  .towns section img{
+  .towns section img {
     display: inline;
     max-width: 100%;
-    margin:0;
+    margin: 0;
   }
-  
+
 }

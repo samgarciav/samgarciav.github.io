@@ -136,9 +136,9 @@ nav ul li:first-child {
 
 .hero section {
   position: absolute;
-  top: 30%;
-  left: 7%;
-  right: 7%;
+  top: 20%;
+  left: 3%;
+  right: 3%;
   background-color: rgba(0, 0, 0, .8);
   color: white;
   box-shadow: 0 0 30px white;
@@ -148,7 +148,7 @@ nav ul li:first-child {
   grid-template-columns: 40% 15% 30% 15%;
   grid-template-rows: repeat(6, auto);
   align-items: center;
-  font-size: .5em;
+  font-size: .6em;
 }
 
 .hero section h3 {
