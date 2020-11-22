@@ -44,8 +44,6 @@ fetch(forecast)
       today++;
     }
 
-
-
     let forecastday = document.getElementsByClassName('forecastday');
     for (let i = 0; i < forecastday.length; i++) {
       forecastday[i].innerHTML = newdays[i].main.temp;
