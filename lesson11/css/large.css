@@ -23,13 +23,25 @@
     font-size: 1.5em;
   }
 
+  nav {
+    max-width: 80%;
+  }
+
   .prestontitle {
     font-size: 2.5em;
   }
 
+  header {
+    justify-content: center;
+  }
 
-  picture {
-    flex: 0 0 10%;
+  header picture {
+    flex: 0 0 auto;
+    height: 5em;
+  }
+
+  header picture img {
+    height: 100%;
   }
 
   article {
