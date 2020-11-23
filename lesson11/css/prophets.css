@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(50, 52, 150);
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+}
+
+main {
+  background-color: azure;
+  max-width: 90%;
+  margin: auto;
+  border-radius: .5em;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr
+}
+
+section {
+  background-color: bisque;
+  text-align: center;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 1em;
+  border-radius: .5em;
+}
+
+p {
+  margin: .5em;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5em;
+  border-radius: .5em;
+  box-shadow: .5em .5em .5em 0em rgba(0, 0, 0, .5);
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+footer {
+  text-align: center;
+  margin: 2em;
+  color: white;
+  font-size: .8em;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: .5em;
+}
+
+/* ----------------------------- Medium ----------------------------- */
+@media only screen and (min-width: 43rem) {
+  main {
+    max-width: 80%;
+
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  }
+}
+
+/* ----------------------------- Large ----------------------------- */
+@media only screen and (min-width: 62rem) {
+  main {
+    max-width: 90%;
+  }
+
+  .cards {
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,109 @@
+@media only screen and (min-width: 40rem) {
+  body {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .pancakes {
+    font-size: .8em;
+  }
+
+  picture {
+    flex: 0 0 20%;
+  }
+
+  article picture {
+    max-width: 50%;
+    float: right;
+    margin: 0 0 0 1.5em;
+    justify-self: center;
+  }
+
+  nav {
+    max-width: 80%;
+    margin: 1em auto 1em auto;
+
+  }
+
+  nav ul {
+    display: flex;
+    text-align: center;
+  }
+
+  nav ul li {
+    padding: 0px;
+    flex: 1 1 100%;
+    border: none;
+    display: block;
+  }
+
+  nav ul li a {
+    padding: 20px;
+  }
+
+  nav ul li:first-child {
+    display: none;
+  }
+
+
+
+  .hero section {
+    font-size: .7em;
+    grid-template-columns: 1fr 1fr;
+    top: 10%;
+    left: 7%;
+    right: auto;
+  }
+
+  iframe {
+    height: 15em;
+    width: 15em;
+  }
+
+  table,
+th,
+td{
+  font-size: 1em;
+}
+
+  .contactinfo {
+    font-size: 1.2em;
+  }
+
+  /************************* Gallery *************************/
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  /************************* FORM *************************/
+  form {
+    max-width: 70%;
+    font-size: 1.7em;
+  }
+
+  form input[type="submit"] {
+    display: block;
+    margin: .5em auto;
+    width: 13em;
+  }
+
+  /************************* Home *************************/
+  .towns {
+    grid-template-columns: repeat(2, minmax(15em, auto));
+  
+  }
+
+  .towns section:nth-child(3){
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
+
+
+}
