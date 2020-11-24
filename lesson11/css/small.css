@@ -255,6 +255,12 @@ iframe {
 
 .contact img {
   width: 50px;
+  height: 100%;
+}
+
+.contact address img{
+  width: 30px;
+  height: 100%;
 }
 
 .contact ul {
@@ -267,10 +273,6 @@ iframe {
 
 .contact ul li {
   margin: 0.5em;
-}
-
-.fa {
-  font-size: 20rem;
 }
 
 footer {
