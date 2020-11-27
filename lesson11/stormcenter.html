@@ -36,8 +36,8 @@
       <li><a href="#" onclick="applyclass()"> &#9776; Menu</a> </li>
       <li><a href="index.html">Home</a></li>
       <li><a href="preston.html">Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
+      <li><a href="sodaSprings.html">Soda Springs</a></li>
+      <li><a href="fishHaven.html">Fish Haven</a></li>
       <li class="active"><a href="stormcenter.html">Storm Center</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
@@ -58,7 +58,7 @@
       <fieldset>
         <legend>Storm Information</legend>
         <label>Storm date <input type="date" name="date"></label>
-        <label>Storm Type: <input list="stormtype" name="stormtype" >
+        <label>Storm Type: <input list="stormtype" name="stormtype">
           <datalist id="stormtype">
             <option value="Flash Flood">
             <option value="Hail">
@@ -67,7 +67,8 @@
             <option value="Tornado">
           </datalist>
         </label>
-        <label>Storm severity:  <span id="severity">1</span><input type="range" name="severity" min="0" max="10" step="1" value="1" oninput="queonda(this.value)" onchange="queonda(this.value)"></label>
+        <label>Storm severity: <span id="severity">1</span><input type="range" name="severity" min="0" max="10" step="1"
+            value="1" oninput="queonda(this.value)" onchange="queonda(this.value)"></label>
         <label>Storm region<select name="region">
             <option value="" selected disabled>- Select region -</option>
             <option value="Preston">Preston</option>
@@ -84,16 +85,13 @@
           <label><input type="radio" name="indanger" value="No"> No</label>
         </div>
 
-        <label>Additional Information <textarea name="comments" ></textarea></label>
+        <label>Additional Information <textarea name="comments"></textarea></label>
 
       </fieldset>
       <input type="submit" value="Report now">
 
     </form>
-
-
   </main>
-
   <footer>
     <p> &copy; <span id="getFullYear"></span> | Samuel García | México | <a class="byui"
         href="https://www.byui.edu/online" target="_blank">
@@ -102,17 +100,11 @@
     <p id="today">ja</p>
     <a class="portalink" href="../index.html">Course Portal</a>
   </footer>
-
-
   <script src="js/lastModified.js"></script>
   <script src="js/hamburger.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfont.js"></script>
-
-  <script src="js/lazyload.js"></script>
   <script src="js/severity.js"></script>
-
 </body>
 
 </html>

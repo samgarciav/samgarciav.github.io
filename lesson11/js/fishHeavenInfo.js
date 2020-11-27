@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -19,7 +19,7 @@ fetch(apiURL)
     }
   });
 
-const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
+const forecast = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
 fetch(forecast)
   .then(function (response) {
     return response.json();
@@ -28,13 +28,15 @@ fetch(forecast)
     const days = jsonObject['list'];
     console.log(days);
     var h = 0;
-    var newdays = [];
-    for (let i = 0; i < days.length; i++) {
-      if (days[i].dt_txt.includes('18:00:00') /* == `2020-11-${today} 18:00:00` */) {
-        newdays[h] = days[i];
-        h++;
+    var newdays=[];
+      for (let i = 0; i < days.length; i++) {
+        if (days[i].dt_txt.includes('18:00:00') /* == `2020-11-${today} 18:00:00` */) {
+          newdays[h] = days[i];
+          h++;
+        }
       }
-    }
+    
+    console.log(newdays);
 
     let forecastday = document.getElementsByClassName('forecastday');
     for (let i = 0; i < forecastday.length; i++) {
@@ -62,7 +64,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const events = jsonObject['towns'];
-    const ssevents = events.filter(value => (value.name == 'Soda Springs'));
+    const ssevents = events.filter(value => (value.name == 'Fish Haven'));
     let divevents = document.getElementsByClassName("events")[0];
     let p0 = document.createElement('P');
     let p1 = document.createElement('P');
@@ -73,5 +75,8 @@ fetch(requestURL)
     divevents.appendChild(p1);
     p2.innerHTML = ssevents[0].events[2];
     divevents.appendChild(p2);
+    /*   for (let i = 0; i < ssevents[0].events.length; i++) {
+        `p${[i]}`.innerHTML = ssevents[0].events[i];
+        divevents.appendChild(`p${[i]}`);
+      } */
   });
-

@@ -44,7 +44,7 @@ picture {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 section {
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 nav {
@@ -139,7 +139,7 @@ nav ul li:first-child {
   top: 20%;
   left: 3%;
   right: 3%;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .9);
   color: white;
   box-shadow: 0 0 30px white;
   border: 1px solid black;
@@ -171,11 +171,21 @@ nav ul li:first-child {
   margin: 0;
 }
 
+#currently{
+  text-transform: capitalize;
+}
+
+.comingevents{
+  text-align: center;
+  margin-top: 2.5em;
+border: 2px solid rgba(0, 0, 0, .5);
+  padding: 1em;
+}
 
 .forecast {
   display: block;
   text-align: center;
-  margin-top: 1.5em;
+  margin: 1em 0em;
   background-color: #7FDEFF;
   padding: 1em;
 }
@@ -207,12 +217,13 @@ td {
 }
 
 article {
-  margin: 1.5em .5em .5em .5em;
+  margin: 0em .5em .5em .5em;
   background-color: aliceblue;
   box-shadow: 0 0 10px black;
   padding: .5em;
   font-size: .7em;
   line-height: 1.5em;
+  display: flow-root;
 }
 
 article picture {
@@ -222,13 +233,13 @@ article picture {
 
 .contact {
   background-color: #7FDEFF;
-  margin: 1.1em 0;
+  margin: 1em 0;
   padding: .5em;
 }
 
 .contact h4 {
   margin: 0 0 0.3em;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bolder;
 }
 
@@ -253,9 +264,8 @@ iframe {
   color: inherit;
 }
 
-.contact img {
+.socialmedia img{
   width: 50px;
-  height: 100%;
 }
 
 .contact address img{

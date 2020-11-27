@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -19,7 +19,7 @@ fetch(apiURL)
     }
   });
 
-const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
+const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
 fetch(forecast)
   .then(function (response) {
     return response.json();
@@ -73,5 +73,8 @@ fetch(requestURL)
     divevents.appendChild(p1);
     p2.innerHTML = ssevents[0].events[2];
     divevents.appendChild(p2);
+    /*   for (let i = 0; i < ssevents[0].events.length; i++) {
+        `p${[i]}`.innerHTML = ssevents[0].events[i];
+        divevents.appendChild(`p${[i]}`);
+      } */
   });
-
