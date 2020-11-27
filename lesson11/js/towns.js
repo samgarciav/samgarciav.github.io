@@ -8,7 +8,7 @@ fetch(requestURL)
 
     const townsO = jsonObject['towns'];
     const towns = townsO.filter(x => (x.name == 'Preston' || x.name == 'Fish Haven' || x.name == 'Soda Springs'));
-    let alts= ['Image of beautufil flowers from Soda Springs','Image of the road heading Fish Haven', 'Image of the mountains of Preston']
+    let alts= ['Road heading Fish Haven','Beautufil flowers from Soda Springs','An Image showing the mountains of Preston']
 
     for (let i = 0; i < towns.length; i++) {
       let town = document.createElement('section');
