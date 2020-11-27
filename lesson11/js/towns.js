@@ -7,9 +7,10 @@ fetch(requestURL)
     /*     console.table(jsonObject);  // temporary checking for valid response and data parsing */
 
     const townsO = jsonObject['towns'];
-    const towns = townsO.filter(x=>(x.name == 'Preston' || x.name == 'Fish Haven' || x.name == 'Soda Springs'));
+    const towns = townsO.filter(x => (x.name == 'Preston' || x.name == 'Fish Haven' || x.name == 'Soda Springs'));
+    let alts= ['Image of beautufil flowers from Soda Springs','Image of the road heading Fish Haven', 'Image of the mountains of Preston']
 
-      for (let i = 0; i < towns.length; i++) {
+    for (let i = 0; i < towns.length; i++) {
       let town = document.createElement('section');
       let townname = towns[i].name;
 
@@ -40,10 +41,9 @@ fetch(requestURL)
       town.appendChild(div2);
 
       let img = document.createElement('img');
-      /* img.setAttribute('src', "images/home/placeholderhome.png"); */
-      img.setAttribute('src',`images/home/townimg${[i]}.jpg` );
-      /* img.setAttribute('data-src', `images/home/townimg${[i]}.jpg`); */
-      img.setAttribute('alt', `${towns[i].name} image`);
+
+      img.setAttribute('src', `images/home/townimg${[i]}.jpg`);
+      img.setAttribute('alt', alts[i]);
       town.appendChild(img);
 
       document.querySelector('div.towns').appendChild(town);
