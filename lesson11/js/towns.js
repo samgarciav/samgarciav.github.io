@@ -40,8 +40,9 @@ fetch(requestURL)
       town.appendChild(div2);
 
       let img = document.createElement('img');
-      img.setAttribute('src', "images/home/placeholderhome.png");
-      img.setAttribute('data-src', `images/home/townimg${[i]}.jpg`);
+      /* img.setAttribute('src', "images/home/placeholderhome.png"); */
+      img.setAttribute('src',`images/home/townimg${[i]}.jpg` );
+      /* img.setAttribute('data-src', `images/home/townimg${[i]}.jpg`); */
       img.setAttribute('alt', `${towns[i].name} image`);
       town.appendChild(img);
 
