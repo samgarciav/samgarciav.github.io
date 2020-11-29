@@ -307,8 +307,6 @@ footer {
 }
 
 /************************* Gallery *************************/
-
-
 .gallery {
   display: grid;
   gap: 1em;
@@ -443,11 +441,17 @@ form input:required:valid {
 
 .towns section div {
   margin: 0;
+   margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.towns section div div{
   font-size: .7em;
 }
 
-.towns section div p .bold {
+.towns section div .bold {
   font-weight: 700;
+  
 }
 
 .towns section img{

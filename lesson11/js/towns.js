@@ -26,15 +26,15 @@ fetch(requestURL)
       motto.innerHTML = towns[i].motto;
       div2.appendChild(motto);
 
-      let p1 = document.createElement('P');
+      let p1 = document.createElement('div');
       p1.innerHTML = `<span class='bold'>Year Founded: </span>${towns[i].yearFounded}`;
       div2.appendChild(p1);
 
-      let p2 = document.createElement('P');
+      let p2 = document.createElement('div');
       p2.innerHTML = `<span class='bold'>Population: </span>${towns[i].currentPopulation}`;
       div2.appendChild(p2);
 
-      let p3 = document.createElement('P');
+      let p3 = document.createElement('div');
       p3.innerHTML = `<span class='bold'>Anual Rain Fall </span>${towns[i].averageRainfall}`;
       div2.appendChild(p3);
 
