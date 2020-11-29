@@ -26,8 +26,7 @@ fetch(forecast)
   })
   .then(function (jsonObject) {
     const days = jsonObject['list'];
-    console.log(days);
-    var h = 0;
+     var h = 0;
     var newdays = [];
     for (let i = 0; i < days.length; i++) {
       if (days[i].dt_txt.includes('18:00:00') /* == `2020-11-${today} 18:00:00` */) {

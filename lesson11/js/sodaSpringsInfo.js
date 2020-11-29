@@ -26,7 +26,6 @@ fetch(forecast)
   })
   .then(function (jsonObject) {
     const days = jsonObject['list'];
-    console.log(days);
     var h = 0;
     var newdays = [];
     for (let i = 0; i < days.length; i++) {

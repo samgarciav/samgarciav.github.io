@@ -26,7 +26,6 @@ fetch(forecast)
   })
   .then(function (jsonObject) {
     const days = jsonObject['list'];
-    console.log(days);
     var h = 0;
     var newdays=[];
       for (let i = 0; i < days.length; i++) {
@@ -34,10 +33,7 @@ fetch(forecast)
           newdays[h] = days[i];
           h++;
         }
-      }
-    
-    console.log(newdays);
-
+      }  
     let forecastday = document.getElementsByClassName('forecastday');
     for (let i = 0; i < forecastday.length; i++) {
       forecastday[i].innerHTML = newdays[i].main.temp;
@@ -54,7 +50,6 @@ fetch(forecast)
       let longdate = new Date(newdays[i].dt_txt);
       weatherday[i].textContent = longdate.toLocaleString("en-us", { weekday: "short" });
     }
-
   });
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
