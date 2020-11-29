@@ -441,8 +441,8 @@ form input:required:valid {
 
 .towns section div {
   margin: 0;
-   margin-block-start: 1em;
-    margin-block-end: 1em;
+   margin: 1em;
+    
 }
 
 .towns section div div{
