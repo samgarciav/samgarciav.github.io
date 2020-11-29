@@ -307,9 +307,7 @@ footer {
 }
 
 /************************* Gallery *************************/
-.gallerytitle {
-  padding: 0px 20px;
-}
+
 
 .gallery {
   display: grid;
@@ -345,11 +343,6 @@ footer {
 }
 
 /* ------------- FORM ------------- */
-.reporttitle {
-  padding: 0px 20px;
-  font-size: 1.3em;
-}
-
 form {
   max-width: 90%;
   margin: auto;
