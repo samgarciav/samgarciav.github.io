@@ -141,7 +141,7 @@ nav ul li:first-child {
   border: 1px solid black;
   padding: .5em;
   display: grid;
-  grid-template-columns: 40% 15% 30% 15%;
+  grid-template-columns:  35% 20% 25% 20%;
   grid-template-rows: repeat(6, auto);
   align-items: center;
   font-size: .6em;
