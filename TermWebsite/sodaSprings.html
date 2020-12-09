@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep The Weather | Preston Idaho</title>
+  <meta name="description" content="Sam Garcia W07 Assignment: Preston Page">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet"> -->
+
+</head>
+
+<body>
+  <div class="pancakes">
+    <p>Saturday Preston Pancakes in the Park! <br> 9:00 a.m. at the city park pavilion.</p>
+    <button onclick="closepancakes()">X</button>
+  </div>
+
+  <header>
+    <picture>
+      <img class="logoimg" src="images/Keep_The_Weather_Logo.png" alt="Keep The Weather Logo">
+    </picture>
+    <section>
+      <h1>Keep The Weather</h1>
+      <p class="motto">Preserve it together</p>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="nav">
+      <li><a href="#" onclick="applyclass()"> &#9776; Menu</a> </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li class="active"><a href="SodaSprings.html">Soda Springs</a></li>
+      <li><a href="fishHaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="prestontitle">Soda Springs</h2>
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/SodaSrpings/Hero_image_Soda_Springs_500.webp">
+        <source media="(max-width: 800px)" srcset="images/SodaSrpings/Hero_image_Soda_Springs_800.webp">
+        <source media="(max-width: 1200px)" srcset="images/SodaSrpings/Hero_image_Soda_Springs_1200.webp">
+        <source media="(max-width: 1900px)" srcset="images/SodaSrpings/HeroSodaSprings_1500.webp">
+        <img src="images/SodaSrpings/HeroSodaSprings_1500.webp" alt="Banner image saying 'Hello Soda Springs'">
+        
+      </picture>
+      <section>
+        <h3>Weather summary</h3>
+        <h4>Currently:</h4>
+        <div><span id="currently">Sunny</span></div>
+        <h4>High:</h4>
+        <div><span id="tempF">50</span> &deg;F</div>
+        <h4>Windchill:</h4>
+        <div><span id="windchill"></span></div>
+        <h4>Humidity:</h4>
+        <div><span id="humudity"></span>%</div>
+        <h4>Wind Speed:</h4>
+        <div> <span id="speed"></span> mph</div>
+      </section>
+    </div>
+
+    <div class="comingevents">
+      <h3>Coming events!</h3>
+      <div class="events">
+
+      </div>
+    </div>
+
+    <div class="forecast">
+      <h3>5 day forecast</h3>
+      <table>
+        <tr>
+          <th class="day">Fri</th>
+          <th class="day">Sat</th>
+          <th class="day">Sun</th>
+          <th class="day">Mon</th>
+          <th class="day">Tue</th>
+        </tr>
+        <tr>
+          <td><img src="images/5dayforcast/wind.png" alt="Icon represnting a windy day"><span
+              class="forecastday"></span>&deg;F</td>
+          <td><img src="images/5dayforcast/rain.png" alt="Icon represnting a rainy day"><span
+              class="forecastday"></span>&deg;F</td>
+          <td><img src="images/5dayforcast/cloud.png" alt="Icon represnting a cloudy day"><span
+              class="forecastday"></span>&deg;F</td>
+          <td><img src="images/5dayforcast/light.png" alt="Icon represnting a stormy day"><span
+              class="forecastday"></span>&deg;F</td>
+          <td><img src="images/5dayforcast/sun.png" alt="Icon represnting a sunny day"><span
+              class="forecastday"></span>&deg;F</td>
+        </tr>
+      </table>
+    </div>
+
+    <article>
+      <picture class="articleimg"><img src="images/SodaSrpings/Soda_Spring_River.webp"
+          alt="Picture from a Soda Springs River"></picture>
+      <h3>About Soda Springs</h3>
+      <p>The city is named for the hundreds of natural springs of carbonated water that are located in and around the
+        city.[6] The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in
+        the middle 19th century. Today the city is also known as the location of the Soda Springs Geyser, which was
+        unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing attraction. Instead
+        they drilled into a chamber of highly pressurized carbon dioxide gas and cold water and the geyser was released.
+        After running for weeks, and flooding the downtown area, it was capped and manually released when requested as a
+        tourist attraction. Now it is let loose every hour on the hour by a timed release valve. Its height and volume
+        have not decreased after many years. There are viewing platforms at either end of the travertine mound where the
+        geyser erupts. Interpretive signs are located on the platforms explaining this phenomenon.
+      </p>
+    </article>
+
+    <div class="contact">
+      <h3>Contact Info</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2smx!4v1606227188833!5m2!1sen!2smx">
+      </iframe>
+      <div class="contactinfo">
+        <h4>Keep The Weather</h4>
+        <address>
+          <img src="images/mapmarker.png" alt="mapmarker icon"> Preston Idaho 83263 USA
+        </address>
+        &#128241; <a href="tel:+522444464777"> 5555555555</a><br>
+        &#9993; <a href="mailto:12345@example.com">info@keeptheweather.com</a><br>
+      </div>
+      <ul class="socialmedia">
+        <li><a href="https://wa.me/522441105796" target="_blank"><img src="images/social/WhatsApp.jpg"
+              alt="WhatsApp logo"></a>
+        </li>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="images/social/fblogo.jpg"
+              alt="Facebook logo"></a>
+        </li>
+        <li> <a href="https://twitter.com/?lang=en" target="_blank"><img class="sociallogo"
+              src="images/social/twitterlogo.jpg" alt="Twitter logo"></a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p> &copy; <span id="getFullYear"></span> | Samuel García | México | <a class="byui"
+        href="https://www.byui.edu/online" target="_blank">
+        BYUI
+        Online Learning</a> </p>
+    <p id="today">ja</p>
+    <a class="portalink" href="../index.html">Course Portal</a>
+    <a class="portalink" href="https://openweathermap.org/">openweathermap</a>
+  </footer>
+
+  <script src="js/lastModified.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfont.js"></script>
+  <script src="js/sodaSpringsInfo.js"></script>
+
+
+
+</body>
+
+</html>
