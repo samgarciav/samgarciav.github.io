@@ -2,9 +2,13 @@ body {
   font-size: 1rem;
 }
 
-h2{
+header {
+  display: none;
+}
+
+h2 {
   font-family: 'East Sea Dokdo', cursive;
-font-size: 5em;
+  font-size: 5em;
 }
 
 .nav {
@@ -96,6 +100,13 @@ nav ul li:hover {
   border: 2px solid white;
 }
 
-header {
-  display: none;
+.mainContent{
+  max-width: 65%;
+  margin: auto;
+}
+
+.weatherInfo{
+  margin: auto;
+  max-width: 65%;
+  background-color: rgba(224, 255, 255, 1);
 }
