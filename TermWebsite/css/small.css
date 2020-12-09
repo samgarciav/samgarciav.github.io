@@ -9,6 +9,11 @@ header {
 h2 {
   font-family: 'East Sea Dokdo', cursive;
   font-size: 5em;
+  color: rgba(34, 139, 34, 1);
+}
+
+p {
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 .nav {
@@ -100,13 +105,45 @@ nav ul li:hover {
   border: 2px solid white;
 }
 
-.mainContent{
+.getReady{
+  margin: auto;
   max-width: 65%;
+}
+
+.weatherInfo {
+  background-color: rgba(224, 255, 255, 1);
+
+}
+
+.weatherMargin {
+  margin: auto;
+  max-width: 65%;
+}
+
+.tourOptions{
+  margin: auto;
+  max-width: 65%;
+}
+
+.tourOptions img {
+  float: left;
+  width: 350px;
+}
+
+.tourOptions img:nth-child(even){
+  float: right;
+}
+
+.tourOptions h2{
+  clear: both;
+}
+
+.tourOptions button{
+  background-color: red;
   margin: auto;
 }
 
-.weatherInfo{
-  margin: auto;
-  max-width: 65%;
-  background-color: rgba(224, 255, 255, 1);
+footer{
+  clear: both;
+  background-color: red;
 }
