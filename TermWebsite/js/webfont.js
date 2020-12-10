@@ -1,1 +1,1 @@
-WebFont.load({ google: { families: ['Do+Hyeon&display=swap','East+Sea+Dokdo&display=swap', 'Black+Han+Sans&display=swap']}});
+WebFont.load({ google: { families: ['Do+Hyeon','East+Sea+Dokdo', 'Black+Han+Sans']}});

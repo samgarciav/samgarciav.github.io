@@ -1,7 +1,31 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=d99a32fe13007dd105b53db660fb31f7"
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.510910497519408&lon=-86.94941523853764&units=metric&appid=d99a32fe13007dd105b53db660fb31f7"
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
+
+    document.querySelectorAll(".weatherDetails")[0].innerHTML = jsObject.current.weather[0].description;
+    document.querySelectorAll(".weatherDetails")[1].innerHTML = jsObject.current.temp;
+    document.querySelectorAll(".weatherDetails")[2].innerHTML = jsObject.current.humidity;
+
+    console.log(jsObject);
+
+    var test=(jsObject.hourly[4].dt);
+    console.log(test);
+
+    let unix_timestamp = test;
+// Create a new JavaScript Date object based on the timestamp
+// multiplied by 1000 so that the argument is in milliseconds, not seconds.
+var date = new Date(unix_timestamp * 1000);
+
+console.log(date.toLocaleTimeString('en-US'));
+
+
+
+document.querySelectorAll(".forecast")[0].innerHTML = new Date(jsObject.hourly[0].dt*1000).toLocaleTimeString('en-US');
+document.querySelectorAll(".forecast")[1].innerHTML = new Date(jsObject.hourly[4].dt*1000).toLocaleTimeString('en-US');
+document.querySelectorAll(".forecast")[2].innerHTML = new Date(jsObject.hourly[8].dt*1000).toLocaleTimeString('en-US');
+
     var currently = document.getElementById('currently').textContent = jsObject.weather[0].description;
     var tempF = jsObject.main.temp_max;
     document.getElementById('tempF').innerHTML = tempF
@@ -26,7 +50,7 @@ fetch(forecast)
   })
   .then(function (jsonObject) {
     const days = jsonObject['list'];
-     var h = 0;
+    var h = 0;
     var newdays = [];
     for (let i = 0; i < days.length; i++) {
       if (days[i].dt_txt.includes('18:00:00') /* == `2020-11-${today} 18:00:00` */) {
