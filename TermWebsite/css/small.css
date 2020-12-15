@@ -15,6 +15,7 @@ h2 {
 
 p {
   font-family: 'Do Hyeon', sans-serif;
+  font-size: 2em;
 
 }
 
@@ -116,24 +117,26 @@ nav ul li:hover {
 
 .weatherMargin {
   background-color: rgba(224, 255, 255, 1);
+  padding: 3em;
 }
 
 .weatherInfo {
-  margin: 3em auto;
+  margin: auto;
   max-width: 65%;
   display: grid;
   grid-template-columns: 1fr 20% 1fr;
   text-align: center;
 }
 
+.weatherInfo ul{
+  padding: 0;
+}
+
 .weatherInfo li {
   list-style-type: none;
   font-family: 'Do Hyeon', sans-serif;
   font-size: 2em;
-}
-
-.currentConditions {
-  margin: 0 0 4em 0;
+  line-height: 2em;
 }
 
 #weatherIcon {
@@ -145,37 +148,37 @@ nav ul li:hover {
 
 /* ***********************Get ready section********************************************************* */
 .getReady {
-margin: 3em auto;
+  margin: 3em auto;
 }
 
 .grImgs {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  font-family:'Do Hyeon', sans-serif;  
-  font-size: 2em; 
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 2em;
 }
 
-.grImgs figure:hover{
+.grImgs figure:hover {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, .5);
 }
 
-.getReady a{
+.getReady a {
   display: block;
   text-align: end;
-  font-family:'Do Hyeon', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   font-size: 2em;
   margin-top: 1em;
 }
 
-.getReady a:hover{
-color:  rgba(34, 139, 34, 1);
+.getReady a:hover {
+  color: rgba(34, 139, 34, 1);
 }
 
 /* ***********************Tour Options Section********************************************************* */
 
 .tourOptions {
-  margin: auto;
+  margin: 3em auto;
   max-width: 65%;
 }
 
