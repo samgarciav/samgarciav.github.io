@@ -16,6 +16,7 @@ h2 {
 p {
   font-family: 'Do Hyeon', sans-serif;
   font-size: 2em;
+  line-height: 1.5em;
 
 }
 
@@ -182,27 +183,46 @@ nav ul li:hover {
   max-width: 65%;
 }
 
-.tourOptions img {
-  float: left;
-  width: 350px;
+.tourOption{
+  margin: 5em 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto) ;
 }
 
-.tourOptions img:nth-child(even) {
-  float: right;
+.tourOption img {
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  margin: 2em;
+  align-self: center;
 }
 
-.tourOptions h2 {
-  clear: both;
+.tourOption button {
+  background-color: rgba(0, 100, 0,.6);
+  border-radius: 25px;
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2em;
+  justify-self: end;
+  padding: .5em;
 }
 
-.tourOptions button {
-  background-color: red;
-  margin: auto;
+.tourOption:nth-child(even) img {
+  grid-column: 1/2;
+  grid-row: 1/-1;
 }
 
 /* ***********************Footer********************************************************* */
 
 footer {
-  clear: both;
-  background-color: red;
+  background-color: rgba(0, 100, 0, 1);
+  text-align: center;
+  padding: 2em;
+  font-family: 'Do Hyeon', sans-serif;
+  color: white;
+  font-size: .5em;
+}
+
+footer a{
+  color: white;
 }
