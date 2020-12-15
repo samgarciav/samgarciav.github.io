@@ -61,6 +61,7 @@ nav ul.responsive li {
 }
 
 .heroImg img {
+  height: 100vh;
   max-width: 100%;
   opacity: .7;
 }
@@ -81,9 +82,9 @@ nav ul.responsive li {
 
 .logo {
   position: absolute;
-  width: 25vw;
+  width: 35vw;
   top: 10%;
-  right: 10%;
+  right: 5%;
 
 }
 
