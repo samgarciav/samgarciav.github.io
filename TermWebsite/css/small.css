@@ -10,10 +10,12 @@ h2 {
   font-family: 'East Sea Dokdo', cursive;
   font-size: 5em;
   color: rgba(34, 139, 34, 1);
+  margin: 0;
 }
 
 p {
   font-family: 'Do Hyeon', sans-serif;
+
 }
 
 .nav {
@@ -63,7 +65,6 @@ nav ul li:hover {
 }
 
 .heroText {
-  font-family: 'East Sea Dokdo', cursive;
   font-size: 7vw;
   text-align: center;
   position: absolute;
@@ -71,7 +72,8 @@ nav ul li:hover {
   padding: 0;
   bottom: 30%;
   left: 10%;
-  -webkit-text-stroke: 2px #556B2F;
+  color: black;
+  -webkit-text-stroke: .5px #556B2F;
   text-shadow: 0px 5px 7px #00000029;
 }
 
@@ -105,22 +107,72 @@ nav ul li:hover {
   border: 2px solid white;
 }
 
-.getReady{
+.getReady {
   margin: auto;
   max-width: 65%;
+}
+
+/* ***********************Weather Information Section********************************************************* */
+
+.weatherMargin {
+  background-color: rgba(224, 255, 255, 1);
 }
 
 .weatherInfo {
-  background-color: rgba(224, 255, 255, 1);
-
-}
-
-.weatherMargin {
-  margin: auto;
+  margin: 3em auto;
   max-width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 20% 1fr;
+  text-align: center;
 }
 
-.tourOptions{
+.weatherInfo li {
+  list-style-type: none;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 2em;
+}
+
+.currentConditions {
+  margin: 0 0 4em 0;
+}
+
+#weatherIcon {
+  filter: drop-shadow(2px 4px 6px rgba(0, 100, 0, 1)) brightness(150%);
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+/* ***********************Get ready section********************************************************* */
+.getReady {
+margin: 3em auto;
+}
+
+.grImgs {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family:'Do Hyeon', sans-serif;  
+  font-size: 2em; 
+}
+
+.grImgs figure:hover{
+  box-shadow: 0px 5px 10px 0px rgba(0, 100, 0, .5);
+
+}
+
+.getReady a{
+  display: block;
+  text-align: end;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+
+/* ***********************Tour Options Section********************************************************* */
+
+.tourOptions {
   margin: auto;
   max-width: 65%;
 }
@@ -130,20 +182,22 @@ nav ul li:hover {
   width: 350px;
 }
 
-.tourOptions img:nth-child(even){
+.tourOptions img:nth-child(even) {
   float: right;
 }
 
-.tourOptions h2{
+.tourOptions h2 {
   clear: both;
 }
 
-.tourOptions button{
+.tourOptions button {
   background-color: red;
   margin: auto;
 }
 
-footer{
+/* ***********************Footer********************************************************* */
+
+footer {
   clear: both;
   background-color: red;
 }

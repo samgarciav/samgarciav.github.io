@@ -20,11 +20,10 @@ var date = new Date(unix_timestamp * 1000);
 
 console.log(date.toLocaleTimeString('en-US'));
 
-
-
-document.querySelectorAll(".forecast")[0].innerHTML = new Date(jsObject.hourly[0].dt*1000).toLocaleTimeString('en-US');
+document.querySelectorAll(".forecast")[0].innerHTML = new Date(jsObject.hourly[2].dt*1000).toLocaleTimeString('en-US');
 document.querySelectorAll(".forecast")[1].innerHTML = new Date(jsObject.hourly[4].dt*1000).toLocaleTimeString('en-US');
-document.querySelectorAll(".forecast")[2].innerHTML = new Date(jsObject.hourly[8].dt*1000).toLocaleTimeString('en-US');
+document.querySelectorAll(".forecast")[2].innerHTML = new Date(jsObject.hourly[6].dt*1000).toLocaleTimeString('en-US');
+document.getElementById("weatherIcon").setAttribute('src',`https://openweathermap.org/img/wn/${jsObject.current.weather[0].icon}@2x.png`);
 
     var currently = document.getElementById('currently').textContent = jsObject.weather[0].description;
     var tempF = jsObject.main.temp_max;
