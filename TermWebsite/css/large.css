@@ -197,7 +197,7 @@
 
   .tourOption img {
     grid-column: 2/-1;
-    grid-row: 1/-1;
+    grid-row: 2/-1;
     margin: 2em;
     width: fit-content;
     align-self: center;
@@ -211,11 +211,19 @@
     font-size: 2em;
     justify-self: end;
     padding: .5em;
+    grid-column: 1/2;
   }
 
   .tourOption:nth-child(even) img {
     grid-column: 1/2;
-    grid-row: 1/-1;
+    grid-row: 2/-1;
+
+  }
+
+  .tourOption:nth-child(even) button {
+    grid-row: 3/-1;
+    grid-column: 2/-1;
+    justify-self: start;
   }
 
   /* ***********************Footer********************************************************* */

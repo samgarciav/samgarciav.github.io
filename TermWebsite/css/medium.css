@@ -188,7 +188,7 @@
 
   .tourOption img {
     grid-column: 2/-1;
-    grid-row: 1/-1;
+    grid-row: 2/-1;
     width: 100%;
     align-self: center;
   }
@@ -204,15 +204,22 @@
     border-radius: 25px;
     color: white;
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     justify-self: end;
     padding: .5em;
     grid-column: 1/-1;
+    align-self: center;
   }
 
   .tourOption:nth-child(even) img {
     grid-column: 1/2;
-    grid-row: 1/-1;
+    grid-row: 2/-1;
+  }
+
+  .tourOption:nth-child(even) button {
+    grid-row: 3/-1;
+    grid-column: 2/-1;
+
   }
 
   /* ***********************Footer********************************************************* */
