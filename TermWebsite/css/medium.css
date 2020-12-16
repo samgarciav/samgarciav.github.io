@@ -231,5 +231,11 @@
 
   footer a {
     color: white;
+
+  }
+
+  .portalink {
+    font-size: 2em;
+    display: block;
   }
 }

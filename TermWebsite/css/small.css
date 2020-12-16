@@ -126,8 +126,13 @@ nav ul.responsive li {
   font-size: 1em;
 }
 
-.grImgs img {
+.grImgs img{
   max-width: 100%;
+}
+
+.grImgs figure {
+  flex: 1 1 100%;
+  
 }
 
 .grImgs figure:hover {
