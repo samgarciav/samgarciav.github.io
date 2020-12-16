@@ -140,6 +140,7 @@
     font-family: 'Do Hyeon', sans-serif;
     font-size: 2em;
     margin-top: 1em;
+    margin-right: 0;
   }
 
   .getReady a:hover {
