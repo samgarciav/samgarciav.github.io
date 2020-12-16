@@ -5,7 +5,7 @@ body {
 h1 {
   font-family: 'East Sea Dokdo', cursive;
   text-align: center;
-  margin: 0;
+  margin: 0 1em;
   position: fixed;
   color: white;
   z-index: 2;
@@ -15,15 +15,17 @@ h1 {
 
 h2 {
   font-family: 'East Sea Dokdo', cursive;
-  font-size: 5em;
+  font-size: 3em;
+  text-align: center;
   color: rgba(34, 139, 34, 1);
   margin: 0;
 }
 
 p {
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   line-height: 1.5em;
+  padding: 0 1em;
 }
 
 .nav {
@@ -58,6 +60,7 @@ nav ul.responsive li {
 
 .hero {
   position: relative;
+
 }
 
 .heroImg img {
@@ -88,7 +91,6 @@ nav ul.responsive li {
 
 }
 
-
 .bttHero {
   position: absolute;
   background-color: rgba(255, 255, 255, .3);
@@ -111,4 +113,112 @@ nav ul.responsive li {
 
 .bttHero:hover {
   border: 2px solid white;
+}
+
+/* ***********************Get ready section********************************************************* */
+.getReady {
+  margin: 3em 0;
+}
+
+.grImgs {
+  display: block;
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1em;
+}
+
+.grImgs img{
+  max-width: 100%;
+}
+.grImgs figure:hover {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, .5);
+}
+
+.getReady a {
+  display: block;
+  text-align: end;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.getReady a:hover {
+  color: rgba(34, 139, 34, 1);
+}
+
+/* ***********************Weather Information Section********************************************************* */
+  
+.weatherMargin {
+  background-color: rgba(224, 255, 255, 1);
+  padding: 3em;
+}
+
+.weatherInfo {
+  margin: auto;
+  text-align: center;
+}
+
+.weatherInfo ul{
+  padding: 0;
+}
+
+.weatherInfo li {
+  list-style-type: none;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+#weatherIcon {
+  filter: drop-shadow(2px 4px 6px rgba(0, 100, 0, 1)) brightness(150%);
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+/* ***********************Tour Options Section********************************************************* */
+  
+.tourOptions {
+  margin: 3em auto;
+}
+
+.tourOption{
+  margin: 5em 0;
+}
+
+.tourOption img {
+display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.tourOption button {
+  background-color: rgba(0, 100, 0,.6);
+  border-radius: 25px;
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1em;
+  padding: .5em;
+  display: block;
+  margin: 0 auto;
+}
+
+.tourOption:nth-child(even) img {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+/* ***********************Footer********************************************************* */
+
+footer {
+  background-color: rgba(0, 100, 0, 1);
+  text-align: center;
+  padding: 2em;
+  font-family: 'Do Hyeon', sans-serif;
+  color: white;
+  font-size: .5em;
+}
+
+footer a {
+  color: white;
 }
