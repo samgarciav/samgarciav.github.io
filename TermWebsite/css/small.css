@@ -354,5 +354,25 @@ form input:required:valid {
 .thankyou {
   font-size: 2em;
   text-align: center;
+}
 
+/* +++++++++++++++++++++++  contact +++++++++++++++++++++++++++ */
+
+iframe{
+  display: block;
+  margin: 3em auto;
+  border: none;
+  box-shadow: 0 0 10px 10px rgb(0, 100, 0);
+}
+
+address{
+  font-style: normal;
+  font-family: 'Do Hyeon', sans-serif; 
+  margin:2em auto -1em auto;
+
+  max-width: 80%;
+}
+
+.thanksp{
+  text-align: center;
 }
