@@ -8,26 +8,14 @@ fetch(apiURL)
     document.querySelectorAll(".weatherDetails")[1].innerHTML = jsObject.current.temp + "&#176C";
     document.querySelectorAll(".weatherDetails")[2].innerHTML = jsObject.current.humidity + ' %';
 
-    console.log(jsObject);
-
     var test = (jsObject.hourly[4].dt);
-    console.log(test);
     let unix_timestamp = test;
     var date = new Date(unix_timestamp * 1000);
-
-    console.log(date.toLocaleTimeString('en-US'));
 
     document.querySelectorAll(".forecast")[0].innerHTML = new Date(jsObject.hourly[2].dt * 1000).toLocaleTimeString([], { timeStyle: 'short' }) + ': ' + jsObject.hourly[2].temp + "&#176C";
     document.querySelectorAll(".forecast")[1].innerHTML = new Date(jsObject.hourly[5].dt * 1000).toLocaleTimeString([], { timeStyle: 'short' }) + ': ' + jsObject.hourly[5].temp + "&#176C";
     document.querySelectorAll(".forecast")[2].innerHTML = new Date(jsObject.hourly[8].dt * 1000).toLocaleTimeString([], { timeStyle: 'short' }) + ': ' + jsObject.hourly[8].temp + "&#176C";
     document.getElementById("weatherIcon").setAttribute('src', `https://openweathermap.org/img/wn/${jsObject.current.weather[0].icon}@2x.png`);
 
-    var forecasthour = jsObject.hourly.filter(myfilter);
-    function myfilter(value, index) {
-      if (index == 2 || index == 5 || index == 8) {
-        return value;
-      }
-    }
-    console.log(forecasthour);
   });
 

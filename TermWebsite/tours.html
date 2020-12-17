@@ -16,76 +16,22 @@
 
 <body>
   <header>
-    <h1>ATVs Cozumel Adventures</h1>
+    <h1 class="alternativeh1">ATVs Cozumel Adventures</h1>
   </header>
 
   <main>
     <nav>
-      <ul class="nav">
+      <ul class="nav nav2">
         <li><a href="#" onclick="applyclass()"> &#9776;</a> </li>
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="rentals.html">Rentals</a></li>
         <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="tours.html">Tours</a></li>
+        <li class="active"><a href="tours.html">Tours</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-
-    <div class="hero">
-      <picture class="heroImg">
-        <source media="(max-width: 450px)" srcset="images/home/hero/heroMobil.webp">
-        <source media="(max-width: 720px)" srcset="images/home/hero/heroMain.webp">
-        <source media="(max-width: 1250px)" srcset="images/home/hero/heroMain.webp">
-        <source media="(max-width: 1920px)" srcset="images/home/hero/heroMain.webp">
-        <img src="images/home/hero/heroMain.webp" alt="Banner image showing a landscape">
-      </picture>
-      <h2 class=heroText>Discover<br>the unknown</h2>
-      <div class="bttHero"><a href="reservations.html">Book now!</a></div>
-      <img class="logo" src="images/Logo.webp" alt="ATVs Cozumel Adventures Logo">
-    </div>
-
-    <section class="getReady">
-      <h2>Get ready to explore</h2>
-      <div class="grImgs">
-        <figure>
-          <img src="images/home/rentOptions/Honda_Metropolitan_1_passenger.webp" alt="">
-          <figcaption>Honda Metropolitan (49cc) - 1 person</figcaption>
-        </figure>
-        <figure>
-          <img src="images/home/rentOptions/Honda_Pioneer_1000.webp" alt="">
-          <figcaption>Honda Pioneer 1000</figcaption>
-        </figure>
-        <figure>
-          <img src="images/home/rentOptions/Jeep_2_door.webp" alt="">
-          <figcaption>2-door Jeep Wrangler - open air - manual - 4 people max</figcaption>
-        </figure>
-      </div>
-      <a href="rentals.html">View more ></a>
-    </section>
-
-    <section class="weatherMargin">
-      <div class="weatherInfo">
-
-        <div class="currentConditions">
-          <h2>Weather Info</h2>
-          <ul>
-            <li>Current condition: <span class="weatherDetails">Test</span></li>
-            <li>Temperature: <span class="weatherDetails"></span></li>
-            <li>Humidity: <span class="weatherDetails"></span></li>
-          </ul>
-        </div>
-        <img id="weatherIcon" src="images/home/placeholders/phweathericon.webp" alt="Icon representing the weather">
-        <div class="todayForecast">
-          <h2>Today's Forecast</h2>
-          <ul>
-            <li class="forecast">8:00am: </li>
-            <li class="forecast">12:00pm:</li>
-            <li class="forecast">4:00pm: </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <h2>Tours</h2>
 
     <section class="tourOptions">
       <div class="tourOption">
@@ -94,7 +40,7 @@
         <p>Drive in one of our jeeps or motorcycles to Isla Passion. Enjoy the beach for as long as you want with our
           recommendations, either with a personal guide or be free to go wherever you want.
         </p>
-        <button onclick="location.href='Reservations.html'">Reserve Now</button>
+        <button onclick="location.href='preston.html'">Reserve Now</button>
       </div>
       <div class="tourOption">
         <h2>Three round beaches</h2>
@@ -103,7 +49,7 @@
         <p>Go by jeep or motorcycle to the three most representative islands of Cozumel. In this round trip visit three
           islands, with an approximate time of 6 hours. Admire the beauty of these little-explored islands and bring
           back unforgettable memories.</p>
-        <button onclick="location.href='reservations.html'">Reserve Now</button>
+        <button onclick="location.href='preston.html'">Reserve Now</button>
       </div>
       <div class="tourOption">
 
@@ -112,10 +58,11 @@
         <p>In our off-road vehicles you can explore incredible roads. With our experience, always accompanied by
           security, you can enjoy wild roads that lead to wonderful islands. Don't miss out on exploring these hidden
           paradises of Cozumel.</p>
-        <button onclick="location.href='reservations.html'">Reserve Now</button>
+        <button onclick="location.href='preston.html'">Reserve Now</button>
       </div>
     </section>
   </main>
+
   <footer>
     <p> &copy; <span id="getFullYear"></span> | Samuel García | México | <a class="byui"
         href="https://www.byui.edu/online" target="_blank">
@@ -124,17 +71,13 @@
     <p id="today">Is</p>
     <a class="portalink" href="../index.html">Course Portal</a>
     <a class="portalink" href="home-wireframes.html">Acnkowledgnements</a>
-
-
   </footer>
 
+  <script src="js/lastModified.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfont.js"></script>
-  <script src="js/lazyload.js"></script>
-  <script src="js/lastModified.js"></script>
-  <script src="js/windchill.js"></script>
-
+  <script src="js/severity.js"></script>
 
 </body>
 

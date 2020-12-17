@@ -1,0 +1,44 @@
+[
+  {
+    "car": "hondaMetro",
+    "reservedHalf": "20",
+    "reservedFull": "30",
+    "walkedHalf": "25",
+    "walkedFull": "35"
+  },
+  {
+    "car": "hondaDior",
+    "reservedHalf": "30",
+    "reservedFull": "40",
+    "walkedHalf": "35",
+    "walkedFull": "45"
+  },
+  {
+    "car": "hondaPcx",
+    "reservedHalf": "40",
+    "reservedFull": "50",
+    "walkedHalf": "45",
+    "walkedFull": "55"
+  },
+  {
+    "car": "hondaPioner",
+    "reservedHalf": "50",
+    "reservedFull": "70",
+    "walkedHalf": "60",
+    "walkedFull": "80"
+  },
+  {
+    "car": "jeep4",
+    "reservedHalf": "70",
+    "reservedFull": "100",
+    "walkedHalf": "85",
+    "walkedFull": "125"
+  },
+  {
+    "car": "jeep2",
+    "reservedHalf": "60",
+    "reservedFull": "85",
+    "walkedHalf": "70",
+    "walkedFull": "90"
+  }
+]
