@@ -361,7 +361,7 @@ form input:required:valid {
 }
 
 form input[type="submit"]:hover{
-  border: 5px solid rgba(0, 100, 0, 1);
+  background-color: rgba(0, 100, 0, 1);
 }
 
 /* +++++++++++++++++++++++  contact +++++++++++++++++++++++++++ */
