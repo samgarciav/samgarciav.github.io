@@ -206,6 +206,10 @@ nav ul.responsive li {
   margin: 0 auto;
 }
 
+.tourOption button:hover{
+  border: 5px solid rgba(0, 100, 0, 1);
+}
+
 
 /* ***********************Footer********************************************************* */
 
@@ -354,6 +358,10 @@ form input:required:valid {
 .thankyou {
   font-size: 2em;
   text-align: center;
+}
+
+form input[type="submit"]:hover{
+  border: 5px solid rgba(0, 100, 0, 1);
 }
 
 /* +++++++++++++++++++++++  contact +++++++++++++++++++++++++++ */
